@@ -1,0 +1,29 @@
+input {
+    overflow:visible;
+}
+
+/* zoomin */
+.clearfix,
+.menu,
+.fields-list,
+.fields-list__item  {
+	zoom:1;
+}
+
+.section_sitemap  .menu__item,
+.btn,
+jqTransformRadioWrapper,
+.jqTransformCheckboxWrapper,
+.jqTransformRadio,
+.jqTransformCheckbox {
+   *zoom:1;
+   *display:inline;
+}
+
+.wrap {
+	zoom:1;
+}
+
+.ico {
+	margin-right: 3px;
+}
