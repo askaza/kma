@@ -217,6 +217,7 @@ body {
 .bottom__inner {
     margin: 0 auto;
     position: relative;
+    padding-top: 15px;
     width: 1250px;
 }
 
@@ -273,14 +274,65 @@ body {
     text-transform: uppercase;
 }
 
-.bottom-contacts__item {
-    float: left;
-    text-decoration: none;
-}
 .user-menu {
     margin: 0;
     padding: 0;
     position: absolute;
     left:0;
+    top:45px;
 }
+.user-menu__item {
+    float: left;
+    list-style: none outside;
+}
+.user-menu__item a {
+    background: url(../images/bg/icons.png) 0 3px no-repeat;
+    color: #fff;
+    font-family: 'Conv_MyriadPro-Cond';
+    font-size: 14px;
+    padding-left: 7px;
+    text-transform: uppercase;
+    padding-left: 22px;
+ }
+.bottom-contacts__item {
+    float: left;
+    text-decoration: none;
+    width: 510px;
+}
+
+.bottom-contacts__title {
+    color: #E97400;
+    font-family: 'Conv_MyriadPro-BoldCond';
+    font-size: 18px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    display: block;
+    font-weight: normal;
+}
+.phone-number {
+    color:#fff;
+    font-size: 20px;
+    vertical-align: middle;
+}
+div.bottom-contacts__item .bottom-contacts__title {
+    display: inline;
+}
+a.bottom-contacts__item {
+    display: block;
+    text-decoration: none;
+    position: relative;
+    padding-left: 38px;
+    line-height: 15px;
+    color: #fff;
+    font-size: 13px;
+    margin-right: 50px;
+    width: auto;
+    margin-top: 4px;
+}
+a.bottom-contacts__item .ico {
+    position: absolute;
+    top:0;
+    left:0;
+}
+
 /* footer > */

@@ -406,14 +406,16 @@ label {
     vertical-align: top;
 }
 
-.ico_user {
-    background-position: 0 0;
-    height: 12px;
-    width: 12px;
-    margin-top: 0px;
-    margin-right: 3px;
+.ico_fb {
+    background-position: -32px -33px;
+    height: 30px;
+    width: 30px;
 }
-
+.ico_vk {
+    background-position: -63px -33px;
+    height: 30px;
+    width: 30px;
+}
 
 /* clear */
 
@@ -421,7 +423,8 @@ label {
 .header .inner:after,
 .menu:after,
 .top:after,
-.fields-list:after {
+.fields-list:after,
+.bottom__inner:after {
     content: ".";
     display: block;
     height: 0;
