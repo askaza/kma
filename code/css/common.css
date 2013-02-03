@@ -30,16 +30,16 @@ input, textarea, abbr {
 
 @font-face {
 	font-family: 'Conv_MyriadPro-BoldCond';
-	src: url('MyriadPro-BoldCond.eot');
-	src: url('MyriadPro-BoldCond.eot?#iefix') format('embedded-opentype');
+	src: url('fonts/MyriadPro-BoldCond.eot');
+	src: url('fonts/MyriadPro-BoldCond.eot?#iefix') format('embedded-opentype');
 	src: local('☺'), url('fonts/MyriadPro-BoldCond.woff') format('woff'), url('fonts/MyriadPro-BoldCond.ttf') format('truetype'), url('fonts/MyriadPro-BoldCond.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Conv_MyriadPro-BoldIt';
-	src: url('MyriadPro-BoldIt.eot');
-	src: url('MyriadPro-BoldIt.eot?#iefix') format('embedded-opentype');
+	src: url('fonts/MyriadPro-BoldIt.eot');
+	src: url('fonts/MyriadPro-BoldIt.eot?#iefix') format('embedded-opentype');
 	src: local('☺'), url('fonts/MyriadPro-BoldIt.woff') format('woff'), url('fonts/MyriadPro-BoldIt.ttf') format('truetype'), url('fonts/MyriadPro-BoldIt.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
@@ -47,19 +47,21 @@ input, textarea, abbr {
 
 @font-face {
 	font-family: 'Conv_MyriadPro-BoldCondIt';
-	src: url('MyriadPro-BoldCondIt.eot');
-	src: url('MyriadPro-BoldCondIt.eot?#iefix') format('embedded-opentype');
+	src: url('fonts/MyriadPro-BoldCondIt.eot');
+	src: url('fonts/MyriadPro-BoldCondIt.eot?#iefix') format('embedded-opentype');
 	src: local('☺'), url('fonts/MyriadPro-BoldCondIt.woff') format('woff'), url('fonts/MyriadPro-BoldCondIt.ttf') format('truetype'), url('fonts/MyriadPro-BoldCondIt.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
-	font-family: 'Conv_MyriadPro-Cond';
-	src: url('MyriadPro-Cond.eot');
-	src: url('MyriadPro-Condt.eot?#iefix') format('embedded-opentype');
-	src: local('☺'), url('fonts/MyriadPro-Cond.woff') format('woff'), url('fonts/MyriadPro-Cond.ttf') format('truetype'), url('fonts/MyriadPro-Cond.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'Conv_MyriadPro-Cond';
+    src: url('fonts/MyriadPro-Cond.eot');
+    src: url('fonts/MyriadPro-Cond.eot') format('embedded-opentype'),
+	url('fonts/MyriadPro-Cond.woff') format('woff'),
+	url('fonts/MyriadPro-Cond.ttf') format('truetype'),
+	url('fonts/MyriadPro-Cond.svg#Conv_MyriadPro-Cond') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
 	font-family: 'Conv_MyriadPro-CondIt';
@@ -99,6 +101,19 @@ input, textarea, abbr {
 }
 
 
+@font-face {
+    font-family: 'arialnarrow';
+    src: url('fonts/arialn-webfont.eot');
+    src: url('fonts/arialn-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/arialn-webfont.woff') format('woff'),
+         url('fonts/arialn-webfont.ttf') format('truetype'),
+         url('fonts/arialn-webfont.svg#arialnarrow') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 /* fonts  > */
 
 body {
@@ -127,55 +142,67 @@ p {
 
 h1 {
 
-    color:#010000;
-    font-size: 32px;
-    line-height: 32px;
-    text-shadow:1px 1px 1px #ffffff;
+
 }
 
 h2 {
 
-    color:#010000;
-    font-size: 22px;
-    line-height: 22px;
-    text-shadow:1px 1px 1px #ffffff;
-    margin-bottom: 10px;
+
 }
 
 h3 {
-    text-shadow:1px 1px 1px #f8f8f8;
-    font-size: 26px;
-    color: #222222;
-    margin-bottom: 20px;
+
 }
 
 h4 {
-    font-family: 'Arial', 'Helvetica', 'Geneva',sans-serif;
-    color: #000;
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 25px;
-    line-height: 22px;
+
 }
 
 /* common blocks < */
 
-.block_order {
-    background: url(../images/bg/block_order-bg.png) no-repeat 0 0;
-    display: block;
-    height: 45px;
-    width: 110px;
-    padding-left: 37px;
-    overflow: hidden;
+.block {
+    position: relative;
+    padding: 26px 29px;
 }
-.block_order a {
-    color:#a0091a;
-    font-family: 'Conv_MyriadPro-BoldCondIt';
-    font-size: 15px;
-    line-height: 43px;
-    text-transform: uppercase;
 
+.block_gray-bordered {
+    border:3px solid #e6e7e8;
+    border-radius: 10px;
 }
+.block_yellow-bordered {
+    border:3px solid #ffd400;
+    border-radius: 10px;
+}
+
+.block__title {
+    border-bottom: 1px dotted #000000;
+    color: #9E0D15;
+    font-family: 'Conv_MyriadPro-BoldCond';
+    font-size: 18px;
+    margin: -7px 0 0;
+    padding-bottom: 17px;
+    text-transform: uppercase;
+}
+
+.block__bottom {
+    position: relative;
+    padding-top: 25px;
+    border-top:1px dotted #000;
+    margin-top: 15px;
+}
+
+ a .ico_comments {
+    text-align: center;
+    font-family: 'Arial','Helvetica', 'Geneva', sans-serif;
+    font-size: 11px;
+    text-transform: none;
+    color:#000;
+    font-style: normal;
+    line-height: 15px;
+    margin-top: 2px;
+}
+
+
 /* common blocks > */
 
 /* form */
@@ -416,6 +443,12 @@ label {
     height: 30px;
     width: 30px;
 }
+.ico_comments {
+    background-position: -32px -67px;
+    height: 16px;
+    padding-right: 4px;
+    width: 18px;
+}
 
 /* clear */
 
@@ -424,7 +457,9 @@ label {
 .menu:after,
 .top:after,
 .fields-list:after,
-.bottom__inner:after {
+.bottom__inner:after,
+.section_info:after,
+.section_promo:after {
     content: ".";
     display: block;
     height: 0;
