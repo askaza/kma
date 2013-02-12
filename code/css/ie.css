@@ -6,7 +6,8 @@ input {
 .clearfix,
 .menu,
 .fields-list,
-.fields-list__item  {
+.fields-list__item, 
+.section_banners {
 	zoom:1;
 }
 
@@ -26,4 +27,13 @@ jqTransformRadioWrapper,
 
 .ico {
 	margin-right: 3px;
+}
+
+/* Через условные комментарии или хаки пишем стили для IE */  
+* html body {
+    /* IE8 */
+    -ms-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/bg/red-arrow.png" sizingMethod="scale");
+    /* IE &lt; 8 */
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader( src="images/bg/red-arrow.png" sizingMethod="scale");
+    background-image: none; /* IE ≤ 9.0 */
 }

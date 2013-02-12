@@ -203,6 +203,7 @@ h4 {
 }
 
 
+
 /* common blocks > */
 
 /* form */
@@ -239,27 +240,8 @@ label {
     position: relative;
     behavior: url(PIE.htc);
 }
-.field_type_text_width_62 {
-	width: 52px !important;
-}
-.field_type_text_width_92 {
-    width: 70px !important;
-}
-.field_type_text_width_112 {
-    width: 90px !important;
-}
-.field_type_text_width_142 {
-    width: 120px !important;
-}
-.field_type_text_width_192 {
-    width: 172px !important;
-}
-.field_type_text_width_825 {
-    width: 800px !important;
-}
-.field_type_date {
-    width: 65px !important;
-}
+
+
 .field_type_textarea {
     border:1px solid #cecece;
     background: #fff;
@@ -459,7 +441,8 @@ label {
 .fields-list:after,
 .bottom__inner:after,
 .section_info:after,
-.section_promo:after {
+.section_promo:after, 
+.section_banners:after {
     content: ".";
     display: block;
     height: 0;
