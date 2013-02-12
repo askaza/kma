@@ -4,5 +4,6 @@ $(document).ready(function() {
 	generateNextPrev: true,
 	generatePagination:false
     });
+    $( "#tabs" ).tabs();
 });
 

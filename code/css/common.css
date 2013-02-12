@@ -441,8 +441,9 @@ label {
 .fields-list:after,
 .bottom__inner:after,
 .section_info:after,
-.section_promo:after, 
-.section_banners:after {
+.section_promo:after,
+.section_banners:after,
+.promo-tabs__tabs:after {
     content: ".";
     display: block;
     height: 0;
