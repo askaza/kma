@@ -5,5 +5,10 @@ $(document).ready(function() {
 	generatePagination:false
     });
     $( "#tabs" ).tabs();
+
+    if ($.browser.msie && $.browser.version < 9) {
+	$('.articles-list_top .block_article:nth-child(even)').addClass('block_article_even');
+	$('.articles-list_bottom .block_article:nth-child(odd)').addClass('block_article_odd');
+    }
 });
 

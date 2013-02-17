@@ -169,6 +169,12 @@ h4 {
     border:3px solid #e6e7e8;
     border-radius: 10px;
 }
+.block_gray-bordered_light {
+    border:1px solid #c9c9c9;
+    border-radius: 10px;
+    padding: 25px 32px;
+    margin-bottom: 40px;
+}
 .block_yellow-bordered {
     border:3px solid #ffd400;
     border-radius: 10px;
@@ -189,6 +195,7 @@ h4 {
     padding-top: 25px;
     border-top:1px dotted #000;
     margin-top: 15px;
+    min-height: 18px;
 }
 
  a .ico_comments {
@@ -443,7 +450,9 @@ label {
 .section_info:after,
 .section_promo:after,
 .section_banners:after,
-.promo-tabs__tabs:after {
+.promo-tabs__tabs:after,
+.columns:after,
+.section_materials:after {
     content: ".";
     display: block;
     height: 0;
