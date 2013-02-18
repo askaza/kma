@@ -188,7 +188,8 @@ body {
     white-space: nowrap;
 }
 
-.mainmenu .menu__item a {
+.mainmenu .menu__item a,
+.mainmenu .menu__item span {
     font-family: 'Conv_MyriadPro-BoldCond';
     font-size: 18px;
     text-decoration: none;
@@ -224,7 +225,8 @@ body {
     background: url(../images/bg/menu-active.png) no-repeat 0 -1px;
     margin: 0 -10px;
  }
-.mainmenu .menu__item_active a {
+.mainmenu .menu__item_active a,
+.mainmenu .menu__item_active span {
     background: url(../images/bg/menu-active.png) no-repeat 100% -64px;
     padding-left: 27px;
     padding-right: 27px;
@@ -308,7 +310,8 @@ body {
     max-width: 155px;
     margin-bottom: 5px;
 }
-.section_sitemap > .menu > .menu__item > a {
+.section_sitemap > .menu > .menu__item > a,
+.section_sitemap > .menu > .menu__item > .dm_current {
     color: #e97400;
     font-size: 18px;
     font-family: 'Conv_MyriadPro-BoldCond';
@@ -331,7 +334,8 @@ body {
  .menu_sub .menu__item:hover {
      text-decoration: none;
  }
-.menu_sub .menu__item a {
+.menu_sub .menu__item a,
+.menu_sub .menu__item .dm_current {
     background: url("../images/bg/bottom-menu-bullet.png") no-repeat scroll 0 9px transparent;
     color: #717171;
     font-family: 'Conv_MyriadPro-Cond';
@@ -1222,7 +1226,7 @@ a.bottom-contacts__item .ico {
 
 .section_faq .questions-list li  {
 	display:block;
-	list-style: none outside;	
+	list-style: none outside;
 	padding: 17px 0 17px 52px;
 	position: relative;
 	border-bottom: 1px dotted #000;
@@ -1256,12 +1260,12 @@ a.bottom-contacts__item .ico {
 	font-family: 'Conv_MyriadPro-BoldCond';
 	line-height: 18px;
 }
-	
+
 	/* faq page > */
-	
+
 	/* questions form < */
-	
-	
+
+
 	.round-form {
 		position: relative;
 	}
@@ -1272,10 +1276,10 @@ a.bottom-contacts__item .ico {
 		border-radius:5px;
 	}
 	.question-from .field {
-		background: none;	
-		padding:7px 15px;		
+		background: none;
+		padding:7px 15px;
 	}
-	
+
 	.field_title {
 		width: 790px;
 		border-bottom: 1px solid #d3d3d3;
@@ -1292,13 +1296,17 @@ a.bottom-contacts__item .ico {
 		height: 18px;
 	}
 	.field_email {
-		width: 300px;		
+		width: 300px;
 		height: 18px;
 	}
-	
+
 	.btn_blue {
 		width: 97px;
 		position: absolute;
-		text-align: center;		
+		text-align: center;
 	}
 	/* questions form > */
+
+	span.dm_current {
+	    cursor: default;
+	}
