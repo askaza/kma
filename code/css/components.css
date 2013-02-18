@@ -38,6 +38,11 @@ body {
     width: 395px;
 }
 
+.columns_content .column_left {
+	float: left;
+	width: 395px;
+}
+
 /* header < */
 
 .header {
@@ -500,6 +505,13 @@ a.bottom-contacts__item .ico {
     font-style: italic;
     line-height: 16px;
 }
+.question-category {
+	color: #bfbfbf;
+	font-family: 'Conv_MyriadPro-Cond';
+    font-size: 16px;
+    text-transform: uppercase;
+	line-height: 20px;
+}
 .articles-link {
     font-size:15px;
     font-family: 'Conv_MyriadPro-BoldCond';
@@ -519,6 +531,7 @@ a.bottom-contacts__item .ico {
     font-family: 'Conv_MyriadPro-BoldCond';
     background: url(../images/bg/faq-block-title.png) no-repeat 0 0;
     height: 26px;
+	line-height: 25px;
     padding: 0 0 17px 16px;
     margin: 0 0 0 -3px;
     font-weight: normal;
@@ -856,13 +869,18 @@ a.bottom-contacts__item .ico {
 .banner__title {
 	display: inline-block;
 	position: relative;
+
+}
+.banner__title__text {
+	display: inline-block;
+	padding: 0 8px 0 11px;
+	position: relative;
 	font-weight: normal;
 	height: 26px;
 	color:#fff;
 	line-height: 25px;
 	font-size: 18px;
 	font-family: 'Conv_MyriadPro-BoldCond';
-	padding: 0 8px 0 11px;
 	background-image: url(../images/bg/red-arrow-bg.png);
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -1191,3 +1209,96 @@ a.bottom-contacts__item .ico {
     z-index: 1;
 }
 /* special > */
+
+/* faq page < */
+.section_faq  {
+	margin-bottom: 50px;
+}
+
+.section_faq .questions-list {
+	counter-reset:list_item;
+	border-top: 1px dotted #000;
+}
+
+.section_faq .questions-list li  {
+	display:block;
+	list-style: none outside;	
+	padding: 17px 0 17px 52px;
+	position: relative;
+	border-bottom: 1px dotted #000;
+}
+.section_faq .questions-list li:before {
+	content:counter(list_item);
+	counter-increment:list_item;
+}
+.section_faq .questions-list  li:before,
+.section_faq .questions-list  li .list-item-before {
+	color: #999999;
+	font-family: 'Arial';
+	font-size: 14px;
+	height: 30px;
+	width: 35px;
+	border-top:1px solid #e8e8e8;
+	border-left: 1px solid #e0e0e0;
+	border-right: 1px solid #e0e0e0;
+	border-bottom: 1px solid #d3d3d3;
+	display: block;
+	position: absolute;
+	left:0;
+	top:11px;
+	text-align: center;
+	border-radius:5px;
+	line-height: 30px;
+}
+.section_faq .questions-list a {
+	font-size: 15px;
+	text-transform: uppercase;
+	font-family: 'Conv_MyriadPro-BoldCond';
+	line-height: 18px;
+}
+	
+	/* faq page > */
+	
+	/* questions form < */
+	
+	
+	.round-form {
+		position: relative;
+	}
+	.question-from {
+		border:1px solid #d3d3d3;
+		background: #f8f7f2 url(../images/bg/question-form-bg.png) repeat-x 0 0;
+		margin-bottom: 60px;
+		border-radius:5px;
+	}
+	.question-from .field {
+		background: none;	
+		padding:7px 15px;		
+	}
+	
+	.field_title {
+		width: 790px;
+		border-bottom: 1px solid #d3d3d3;
+		height: 18px;
+	}
+	.field_message {
+		width: 790px;
+		border-bottom: 1px solid #d3d3d3;
+		height: 60px;
+	}
+	.field_name {
+		width: 365px;
+		border-right: 1px solid #d3d3d3;
+		height: 18px;
+	}
+	.field_email {
+		width: 300px;		
+		height: 18px;
+	}
+	
+	.btn_blue {
+		width: 97px;
+		position: absolute;
+		text-align: center;		
+	}
+	/* questions form > */

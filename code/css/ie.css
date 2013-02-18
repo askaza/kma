@@ -21,19 +21,31 @@ jqTransformRadioWrapper,
    *display:inline;
 }
 
-.wrap {
+/* Через условные комментарии или хаки пишем стили для IE */  
+.banner__title__text {
+    /* IE8 */
+    -ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/bg/red-arrow-bg.png',sizingMethod='scale')";
+    /* IE < 8 */
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../images/bg/red-arrow-bg.png', sizingMethod='scale');
+    background-image: none; /* IE ≤ 9.0 */
 	zoom:1;
 }
 
-.ico {
-	margin-right: 3px;
+.btn_blue {
+    /* IE8 */
+    -ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/bg/blue-btn-bg.png',sizingMethod='scale')";
+    /* IE < 8 */
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../images/bg/blue-btn-bg.png', sizingMethod='scale');
+    background-image: none; /* IE ≤ 9.0 */
+	zoom:1;
 }
 
-/* Через условные комментарии или хаки пишем стили для IE */  
-* html body {
-    /* IE8 */
-    -ms-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/bg/red-arrow.png" sizingMethod="scale");
-    /* IE &lt; 8 */
-    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader( src="images/bg/red-arrow.png" sizingMethod="scale");
-    background-image: none; /* IE ≤ 9.0 */
-}
+
+.section_faq .questions-list li {
+	list-style-type:expression(
+		function(t){
+			t.runtimeStyle.listStyleType = 'none';
+			t.insertAdjacentHTML('afterBegin','<span class="list-item-before">' + (++t.parentNode.IEcounter || (t.parentNode.IEcounter = 1)) + '. </span>');
+		}(this)
+	);
+	}

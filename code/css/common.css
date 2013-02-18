@@ -1,7 +1,7 @@
 html, body, div, span, i, em, u,
 h1, h2, h3, h4, h5, h6, p, table, caption,
 tbody, tfoot, thead, tr, th, td,
-input, textarea, abbr {
+input, textarea, abbr, form, fieldset {
     margin:0;
     padding:0;
     border:0;
@@ -140,9 +140,17 @@ p {
     margin-bottom: 15px;
 }
 
-h1 {
-
-
+.title {
+	color: #000;
+	font-size: 33px;
+	font-family: 'arialnarrow';
+	margin-bottom: 12px;
+}
+.subtitle {
+	color: #000;
+	font-size: 27px;
+	font-family: 'arialnarrow';
+	margin-bottom: 12px;
 }
 
 h2 {
@@ -158,6 +166,8 @@ h4 {
 
 }
 
+
+
 /* common blocks < */
 
 .block {
@@ -172,7 +182,7 @@ h4 {
 .block_gray-bordered_light {
     border:1px solid #c9c9c9;
     border-radius: 10px;
-    padding: 25px 32px;
+    padding: 25px 32px 15px;
     margin-bottom: 40px;
 }
 .block_yellow-bordered {
@@ -226,6 +236,15 @@ h4 {
     margin: 0 0 15px;
 }
 
+input, textarea, select {
+	color: #4a4a48;
+	font-size: 13px;
+	font-family: 'Arial', 'Helvetica', sans-serif;
+}
+textarea {
+	resize:none;
+}
+
 label {
     color:#555555;
     font-size: 18px;
@@ -235,7 +254,7 @@ label {
     margin-left: 3px;
 }
 
-.field_type_text {
+.field_text {
     border:1px solid #cecece;
     background: #fff;
     border-radius: 5px;
@@ -249,7 +268,7 @@ label {
 }
 
 
-.field_type_textarea {
+.field_textarea {
     border:1px solid #cecece;
     background: #fff;
     border-radius: 5px;
@@ -260,33 +279,37 @@ label {
     resize: none;
     font-family: 'Arial', 'Helvetica', sans-serif;
     position: relative;
-    behavior: url(PIE.htc);
     overflow: auto;
 }
 
-.btn {
-    background: url(../images/bg/btn-bg.png) repeat-x 0 0;
-    border:1px solid #cecece;
-    border-radius: 5px;
-    padding: 0 6px;
-    height: 26px;
-    line-height: 24px;
-    font-size: 12px;
-    color:#01886d;
+.btn {   
     display: inline-block;
     vertical-align: top;
     position: relative;
     cursor: pointer;
     font-family: 'Arial', 'Helvetica', sans-serif;
-    behavior: url(PIE.htc);
 }
 
-.btn_green {
-    background: url(../images/bg/green-btn.png) repeat-x 0 0;
-    border:1px solid #009b7b;
-    color: #fff;
-    height: 23px;
-    line-height: 19px;
+.btn_blue {   
+    border-top:1px solid #2d5ebe;
+	font-family: 'Conv_MyriadPro-Cond';
+	height: 33px;
+	line-height: 32px;
+	text-transform: uppercase;
+	color: #fff;
+	text-shadow:1px 1px 1px #23427e;
+    background-image: url(../images/bg/blue-btn-bg.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+	text-transform: uppercase;	
+    -o-background-size: 100% 32px; /* opera ≥ 9.5 */
+    -webkit-background-size: 100% 32px /* Safari ≥ 5.0, Chrome ≥ 4.0 */
+    -khtml-background-size: 100% 32px; /* Konqueror ≥ 3.5.4 */
+    -moz-background-size: 100% 32px; /* Firefox ≥ 3.6 */
+    background-size: 100% 32px; /* браузеры с поддержкой CSS3: FF ≥ 4, Opera ≥ 10.53, IE ≥ 9.0 */
+	bottom:0;
+	right:0;
+	border-radius:0 0 5px 0;
 }
 .field_chbox_box {
     position: relative;
@@ -305,65 +328,7 @@ label {
     text-align: left !important;
 }
 
-.jqTransformSelectWrapper {
-	position: relative;
-	display: block;
-	background: none repeat scroll 0 0 #FFFFFF;
-    border: 1px solid #CECECE;
-    border-radius: 5px 5px 5px 5px;
-    font-size: 12px;
-    position: relative;
-	width: 100% !important;
-}
-.jqTransformSelectWrapper div {
-	 padding: 5px 10px;
-	 height: 14px;
-	 color: #010000;
-    font-family: 'Arial','Helvetica',sans-serif;
-	position: relative;
-}
-.jqTransformSelectWrapper div span {
-	width: 100% !important;
-	display: block;
-	cursor: pointer;
-}
-.jqTransformSelectOpen {
-	position: absolute;
-	background: url("../images/bg/icons.png") no-repeat scroll -30px -65px #FFFFFF;
-    bottom: -4px;
-    padding: 4px;
-	right: 2px;
-	top:5px;
-	width: 9px;
-	height: 6px;
-}
-.jqTransformSelectWrapper ul {
-	position: absolute;
-	width: 100% !important;
-	background: #fff;
-	border-top: 1px solid #CECECE;
-	border-bottom: 1px solid #CECECE;
-	padding: 0;
-	margin: 0;
-}
-.jqTransformSelectWrapper ul li {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	border-left: 1px solid #CECECE;
-	border-right: 1px solid #CECECE;
-}
-.jqTransformSelectWrapper ul li a {
-	text-decoration: none;
-	padding:3px 10px;
-	color: 	#010000;
-	font-size: 12px;
-	display: block;
-	line-height: 1.4;
-}
-.jqTransformSelectWrapper ul li a:hover {
-	background: #f4f4f4;
-}
+
 /* main styles */
 
 .link-ico {
