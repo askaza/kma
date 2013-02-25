@@ -1271,14 +1271,9 @@ a.bottom-contacts__item .ico {
 /* questions form < */
 
 
-.round-form {
-    position: relative;
-}
 .question-from {
-    border:1px solid #d3d3d3;
     background: #f8f7f2 url(../images/bg/question-form-bg.png) repeat-x 0 0;
     margin-bottom: 60px;
-    border-radius:5px;
 }
 .question-from .field {
     background: none;
@@ -1305,12 +1300,89 @@ a.bottom-contacts__item .ico {
     height: 18px;
 }
 
-.btn_blue {
+.question-from .btn_blue {
     width: 97px;
     position: absolute;
     text-align: center;
+    border-radius:0 0 5px 0;
 }
 /* questions form > */
+
+/* block profile < */
+
+.block_profile {
+    padding: 10px 0;
+    border-top:1px dotted #000;
+    border-bottom:1px dotted #000;
+    height: 50px;
+    margin: 25px 0;
+    overflow: hidden;
+}
+.user {
+    vertical-align: middle;
+     display: inline-block;
+     margin-right: 40px;
+     max-width: 550px;
+}
+.user__img {
+     vertical-align: middle;
+     display: inline-block;
+     width: 50px;
+     height: 50px;
+     overflow: hidden;
+}
+.user__name {
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 13px;
+    font-weight: bold;
+    padding-left: 15px;
+    max-width: 260px;
+}
+.menu_user,
+.menu_user .menu__item {
+    display: inline-block;
+    vertical-align: middle;
+}
+.menu_user .menu__item {
+    display: inline;
+    margin-right: 52px;
+}
+
+.menu_user .menu__item a {
+    font-size: 14px;
+}
+.menu__item_comments sa {
+    color: #000;
+}
+.block_profile ~ .questions-list {
+    border-top:0;
+}
+/* block profile > */
+
+/* block_auth < */
+
+.block_auth {
+    border: 1px solid #C9C9C9;
+    border-radius: 10px 10px 10px 10px;
+    margin-bottom: 40px;
+    padding: 28px 32px 15px;
+    background: url(../images/bg/auth-bg.png) repeat-x 0 100% #fff;
+}
+.block_auth .block__title {
+    color:#262627;
+    font-size: 19px;
+     font-family: 'PTSansNarrowRegular';
+     text-transform: none;
+}
+.column_auth_site {
+    float: left;
+    width:355px;
+    padding-right:
+}
+/* block_auth > */
+
 
 span.dm_current {
     cursor: default;
