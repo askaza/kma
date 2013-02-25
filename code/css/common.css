@@ -287,7 +287,7 @@ label {
 
 .btn_blue {
     border-top:1px solid #2d5ebe;
-	font-family: 'Conv_MyriadPro-Cond';
+	font-family: 'PTSansNarrowRegular';
 	height: 33px;
 	line-height: 32px;
 	text-transform: uppercase;
@@ -323,6 +323,13 @@ label {
     text-align: left !important;
 }
 
+
+input.field_error:-moz-placeholder, 
+textarea.field_error:-moz-placeholder { color: #e91d02;	 }
+
+input.field_error::-webkit-input-placeholder,
+textarea.field_error::-webkit-input-placeholder,
+.field_error.hasPlaceholder { color: #e91d02; }
 
 /* main styles */
 
