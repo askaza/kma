@@ -114,11 +114,19 @@
 					    <li><a href="#tab-2">Вход</a></li>
 					</ul>
 					<div class="auth-tabs__content">
-					    <div id="tab-1" class="promo-tabs__item">
+					    <div id="tab-1" class="auth-tabs__item">
 						<p class="form-note">После заполнения формы на вашу почту будет выслано
 						    письмо для активизации аккаунта. Приятного общения!</p>
-						<form class="form form_auth" action="#" method="get">
-
+						<div class="form-error">
+							<h3>Ошибки заполнения формы</h3>
+							<ul class="errors-list">
+								<li>Заполните пожалуйста поле</li>
+								<li>Введите корректный e-mail</li>
+								<li>Заполните пожалуйста поле</li>
+								<li>Введите код на картинке</li>
+							</ul>
+						</div>
+						<form class="form auth-form" action="#" method="get">
 						    <fieldset class="round-form">
 							<input type="text" placeholder="Имя..." id="reg-name" name="reg-name" class="field field_name" />
 							<input type="text" placeholder="E-mail..." id="reg-email" name="reg-email" class="field field_email" />
@@ -133,7 +141,17 @@
 						    </div>
 						</form>
 					    </div>
-					    <div id="tab-2" class="promo-tabs__item"></div>
+					    <div id="tab-2" class="auth-tabs__item">
+							<form class="form auth-form login-form" action="#" method="get">
+								<fieldset class="round-form">
+									<input type="text" placeholder="Имя..." id="login-name" name="rlogin-name" class="field field_name" />
+									<input type="password" placeholder="Пароль..." id="login-pass" name="login-pass" class="field field_pass" />
+								</fieldset>								
+								<div class="btnset">
+									<input type="submit" value="Войти" class="btn btn_rounded btn_blue" />
+								</div>
+							</form>
+						</div>
 					</div>
 				    </div>
 				</div>

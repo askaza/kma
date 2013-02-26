@@ -218,6 +218,18 @@ h4 {
 
 /* common blocks > */
 
+/* pure-content styles < */
+
+.dotted-box {
+	border-top:1px dotted #000000;
+	padding-top: 30px;
+	margin-bottom: 30px;
+}
+.dotted-box:first-child {
+	border: 0;
+}
+/* pure-content styles > */
+
 /* forms < */
 
 .round-form {
@@ -225,7 +237,10 @@ h4 {
     border:1px solid #d3d3d3;
     border-radius:5px;
 }
-
+ .round-form .field {
+    background: none;
+    padding:7px 15px;
+}
 .fields-list {
     margin: 0;
     padding: 0;
@@ -283,40 +298,6 @@ label {
     overflow: auto;
 }
 
-.btn {
-    display: inline-block;
-    vertical-align: top;
-    position: relative;
-    cursor: pointer;
-    font-family: 'Arial', 'Helvetica', sans-serif;
-}
-
-.btn_blue {
-    border-top:1px solid #2d5ebe;
-    font-family: 'PTSansNarrowRegular';
-    height: 33px;
-    line-height: 32px;
-    text-transform: uppercase;
-    color: #fff;
-    text-shadow:1px 1px 1px #23427e;
-    background-image: url(../images/bg/blue-btn-bg.png);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    text-transform: uppercase;
-    -o-background-size: 100% 32px; /* opera ≥ 9.5 */
-    -webkit-background-size: 100% 32px /* Safari ≥ 5.0, Chrome ≥ 4.0 */
-	-khtml-background-size: 100% 32px; /* Konqueror ≥ 3.5.4 */
-    -moz-background-size: 100% 32px; /* Firefox ≥ 3.6 */
-    background-size: 100% 32px; /* браузеры с поддержкой CSS3: FF ≥ 4, Opera ≥ 10.53, IE ≥ 9.0 */
-    bottom:0;
-    right:0;
-
-}
-
-.btn_rounded {
-        border-radius:5px;
-}
-
 .field_chbox_box {
     position: relative;
     padding-left: 20px;
@@ -368,6 +349,13 @@ textarea.field_error::-webkit-input-placeholder { color: #e91d02; }
     font-family: 'PTSansNarrowRegular';
 }
 
+.form-note {
+	color: #262627;
+	font-size: 13px;
+	margin-bottom: 8px;
+	line-height: 15px;
+}
+
 .jqTransformHidden {display: none;}
 
 .jqTransformCheckbox {
@@ -386,6 +374,44 @@ textarea.field_error::-webkit-input-placeholder { color: #e91d02; }
     display: inline-block;
     vertical-align: middle;
 }
+
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    cursor: pointer;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+	font-size: 15px;
+}
+
+.btn_blue {
+    border-top:1px solid #2d5ebe;
+    font-family: 'PTSansNarrowRegular';
+    height: 33px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow:1px 1px 1px #23427e;
+    background-image: url(../images/bg/blue-btn-bg.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    text-transform: uppercase;
+    -o-background-size: 100% 32px; /* opera ≥ 9.5 */
+    -webkit-background-size: 100% 32px /* Safari ≥ 5.0, Chrome ≥ 4.0 */
+	-khtml-background-size: 100% 32px; /* Konqueror ≥ 3.5.4 */
+    -moz-background-size: 100% 32px; /* Firefox ≥ 3.6 */
+    background-size: 100% 32px; /* браузеры с поддержкой CSS3: FF ≥ 4, Opera ≥ 10.53, IE ≥ 9.0 */
+    bottom:0;
+    right:0;
+
+}
+
+.btn_rounded {
+      border-radius:5px;
+	  padding: 0 14px;
+}
+
 
 /* forms > */
 

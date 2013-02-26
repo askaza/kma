@@ -582,6 +582,29 @@ a.bottom-contacts__item .ico {
     display: block;
     margin-bottom: 20px;
 }
+
+.article-sub {
+	border-top:1px dotted #000;
+	border-bottom:1px dotted #000;
+	position: relative;
+	height: 20px;
+	padding: 12px 0;
+}
+
+.share-box {
+	position: absolute;
+	right: 0;
+	top:15px;
+}
+
+
+.share-btn {
+	padding-right: 45px;
+	color:#5d5d5d;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: 'PTSansNarrowRegular';
+}
 /* article >  */
 
 /* .section_info < */
@@ -887,7 +910,7 @@ a.bottom-contacts__item .ico {
     font-weight: normal;
     height: 26px;
     color:#fff;
-    line-height: 25px;
+    line-height: 26px;
     font-size: 18px;
     font-family: 'PTSansNarrowBold';
     background-image: url(../images/bg/red-arrow-bg.png);
@@ -1275,27 +1298,24 @@ a.bottom-contacts__item .ico {
     background: #f8f7f2 url(../images/bg/question-form-bg.png) repeat-x 0 0;
     margin-bottom: 60px;
 }
-.question-from .field {
-    background: none;
-    padding:7px 15px;
-}
 
-.field_title {
+
+.question-from .field_title {
     width: 790px;
     border-bottom: 1px solid #d3d3d3;
     height: 18px;
 }
-.field_message {
+.question-from .field_message {
     width: 790px;
     border-bottom: 1px solid #d3d3d3;
     height: 60px;
 }
-.field_name {
+.question-from .field_name {
     width: 365px;
     border-right: 1px solid #d3d3d3;
     height: 18px;
 }
-.field_email {
+.question-from .field_email {
     width: 300px;
     height: 18px;
 }
@@ -1367,7 +1387,7 @@ a.bottom-contacts__item .ico {
     border: 1px solid #C9C9C9;
     border-radius: 10px 10px 10px 10px;
     margin-bottom: 40px;
-    padding: 28px 32px 15px;
+    padding: 28px 32px 50px;
     background: url(../images/bg/auth-bg.png) repeat-x 0 100% #fff;
 }
 .block_auth .block__title {
@@ -1375,12 +1395,102 @@ a.bottom-contacts__item .ico {
     font-size: 19px;
      font-family: 'PTSansNarrowRegular';
      text-transform: none;
+	 margin-bottom: 20px;
 }
 .column_auth_site {
     float: left;
     width:355px;
-    padding-right:
+    padding-right:45px;
 }
+.column_auth_fb {
+    float: left;
+    width:300px;
+    padding-left:45px;
+	padding-top: 73px;
+	border-left: 1px solid #cccccc;
+	height: 190px;
+}
+
+.auth-tabs__tabs {
+	margin: -2px 0 0 0;
+	padding: 0;
+	overflow: hidden;
+}
+.auth-tabs__tabs li {
+	float: left;
+	margin: 0 20px 0 0;
+	list-style: none outside;
+}
+.auth-tabs__tabs li a {
+	font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+	color: #305193;
+    font-family: 'PTSansNarrowBold';
+}
+.auth-tabs__tabs .ui-state-active a {
+	color: #a80d21;
+	text-decoration: none;
+	cursor: default;
+}
+.auth-form {
+	padding-left: 37px;
+	background: url(../images/bg/user.png) no-repeat 0 4px;
+}
+
+.login-form {
+	margin-top: 39px;
+} 
+
+.auth-form .field {
+	border-top:1px solid #D3D3D3;
+	width: 285px;
+	padding: 9px 15px;
+	height: 18px;
+}
+.auth-form fieldset .field:first-child {
+	border:0;
+}
+.auth-form .round-form {
+	margin-bottom: 8px;
+}
+.auth-tabs__content {
+	min-height: 300px;
+	padding-top: 15px;
+}
+.auth-form .btnset {
+	margin-top: 20px;
+}
+.capcha__img {
+	vertical-align: middle;
+	display: inline-block;
+	margin-right: 10px;
+}
+.capcha__field {
+	vertical-align: middle;
+	display: inline-block;
+	width: 108px;
+	padding: 7px 12px;
+	border:1px solid #D3D3D3;
+	border-radius:5px;
+	height: 18px;
+}
+.btn_fb_login {
+	cursor: pointer;
+	background: url(../images/bg/fb-btn.png) no-repeat 0 0;
+	height: 51px;
+	width: 244px;
+	font-family: 'PTSansNarrowBold';
+	padding-left: 55px;
+	text-align: center;
+	line-height: 52px;
+	color: #fff;
+	font-size: 17px;
+	text-transform: uppercase;
+	margin-bottom: 17px;
+	text-shadow:1px 1px 1px #043665;
+}
+
 /* block_auth > */
 
 

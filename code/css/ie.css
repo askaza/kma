@@ -8,7 +8,8 @@ input {
 .fields-list,
 .fields-list__item,
 .section_banners,
-.block_profile {
+.block_profile, 
+.auth-tabs__tabs {
 	zoom:1;
 }
 
