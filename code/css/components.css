@@ -21,7 +21,7 @@ body {
 
 .main {
     position: relative;
-    padding-bottom: 600px;
+    padding-bottom: 70px;
     margin: 0 auto;
     width: 1250px;
 }
@@ -267,16 +267,14 @@ body {
 /* footer < */
 
 .footer {
-    background: url(../images/bg/footer-bg.png) repeat-x 0 0;
+    background: url(../images/bg/footer-bg.png) repeat-x 0 0 #e6e6e6;
     position: relative;
-    height: 526px;
-    margin: -526px 0 0;
+    margin: 0 0 0;
     z-index: 2;
 }
 .footer_main_inner {
     margin: 0 auto;
     position: relative;
-    height: 323px;
     padding-top: 120px;
     width: 1250px;
 }
@@ -308,16 +306,16 @@ body {
 }
 .section_sitemap > .menu > .menu__item {
     display: inline-block;
-    vertical-align: top;
     letter-spacing: normal;
-    margin-left:42px;
-    max-width: 155px;
     margin-bottom: 5px;
+    margin-left: 38px;
+    max-width: 158px;
+    vertical-align: top;
 }
 .section_sitemap > .menu > .menu__item > a,
 .section_sitemap > .menu > .menu__item > .dm_current {
     color: #e97400;
-    font-size: 18px;
+    font-size: 17px;
     font-family: 'PTSansNarrowBold';
     text-transform: uppercase;
     text-decoration: none;
@@ -328,7 +326,7 @@ body {
 }
 .section_sitemap .menu__item-note {
     color: #000;
-    font-size: 16px;
+    font-size: 15px;
 }
 .menu_sub .menu__item {
     color:#717171;
@@ -343,7 +341,7 @@ body {
     background: url("../images/bg/bottom-menu-bullet.png") no-repeat scroll 0 9px transparent;
     color: #717171;
     font-family: 'PTSansNarrowRegular';
-    font-size: 14px;
+    font-size: 12px;
     padding-left: 7px;
     text-decoration: none;
     text-transform: uppercase;
@@ -365,7 +363,7 @@ body {
     background: url(../images/bg/icons.png) 0 3px no-repeat;
     color: #fff;
     font-family: 'PTSansNarrowRegular';
-    font-size: 14px;
+    font-size: 13px;
     padding-left: 7px;
     text-transform: uppercase;
     padding-left: 22px;
@@ -383,7 +381,7 @@ body {
 .bottom-contacts__title {
     color: #E97400;
     font-family: 'PTSansNarrowBold';
-    font-size: 18px;
+    font-size: 17px;
     vertical-align: middle;
     text-transform: uppercase;
     display: block;
@@ -449,7 +447,7 @@ a.bottom-contacts__item .ico {
 .bottom .faq-link a {
     color:#8d8d8d;
     font-size: 18px;
-    font-family: 'PTSansNarrowRegular';
+    font-family: 'PTSansNarrowBold';
 }
 
 /* footer > */
@@ -753,6 +751,7 @@ a.bottom-contacts__item .ico {
 .comments-form .field_name {
 	background: url(../images/bg/comments-form-shadow.png) repeat-x 0 0 #fff;
 	width: 753px;	
+	margin-left: 1px;
 }
 .comments-form .field_message {
 	border-top: 1px dotted #cdced0;
@@ -767,6 +766,39 @@ a.bottom-contacts__item .ico {
 	border-radius:0 0 5px 0;
 }
 /* commeents >  */
+
+/* pagination < */
+
+.pager {
+	padding: 12px 0;
+	margin: 15px 0;
+	border-top:1px dotted #000;
+	border-bottom:1px dotted #000;
+}
+.pager ul {
+	padding: 0;
+	margin: 0;
+}
+.pager ul li {
+	list-style: none;
+	display: inline;
+	margin-right: 5px;
+}
+.pager ul li a, 
+.pager ul li span {
+	text-decoration: none;
+	display: inline-block;
+	height: 24px;
+	padding:  0 7px;
+	line-height: 23px;
+	color:#000;
+}
+.pager ul li a:hover, 
+.pager ul li.current span {
+	background: #F6F6F6;
+}
+
+/* pagination > */
 
 /* .section_info < */
 
@@ -1406,6 +1438,18 @@ a.bottom-contacts__item .ico {
 /* faq page < */
 .section_faq  {
     margin-bottom: 50px;
+}
+
+.section_faq .title a {
+	 color: #000000;
+    font-family: 'arialnarrow';
+    font-size: 33px;
+    margin-bottom: 12px;
+	text-decoration: none;
+}
+.section_faq .title a:hover {
+	text-decoration: none;
+	color: #305193;
 }
 
 .section_faq .questions-list {
