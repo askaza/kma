@@ -11,7 +11,7 @@ $(document).ready(function() {
 		$('.articles-list_bottom .block_article:nth-child(odd)').addClass('block_article_odd');
 	}
 
-	$('input, textarea').placeholder();
-
+	$('input, textarea').placeholder();	
+	
 });
 
