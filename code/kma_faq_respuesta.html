@@ -82,38 +82,42 @@
 			<div class="main">   <!-- .main -->
 				<div class="columns"> <!-- .columns -->
 					<div class="column_left"> <!-- .column_left -->
-						<div class="section_faq">
+						
 							<h1 class="title"><a href="#">Часто задаваемые вопросы</a></h1>
-							<div class="question">
-								<h2 class="question__title">
-									<span class="question__num">12.</span>
+							<div class="question-single">
+								<h2 class="question-single__title">
+									<span class="question-single__num">12.</span>
 									Перед нанесением ППУ на ангар с новой оцинковки обязательно 
 									нужно обезжирить поверхность? Если да, то чем и как?
 								</h2>
-								<div class="question__text">
+								<div class="question-single__text">
 									В мансардном этаже имеется пара металлических балок (швеллеры, скрепленные перемычками), 
 									которые частично утоплены в кровельный «пирог». Чем их лучше обработать, чтобы предотвратить
 									образование конденсата?
 								</div>
 								<div class="user user_author">
-									<img width="50" height="50" title="Username" alt="Username" src="images/userpic.png" class="user__img">
+									<img width="50" height="50" title="Username" alt="Username" src="images/userpic.png" class="user__img" />
 									<strong class="user__name">Галина Митрофанова</strong>
 									<small class="date">23 февраля 2013</small>
 								</div>
-							</div>
-							<div class="answer">
-								<div class="user user_author">
-									<img width="50" height="50" title="Username" alt="Username" src="images/user.png" class="user__img">
-									<strong class="user__name">Некто</strong>
-									<small class="date">23 февраля 2013</small>
+								
+								<div class="question-single__answer">
+									<div class="user user_author">
+										<img width="50" height="50" title="Username" alt="Username" src="images/bg/user.png" class="user__img" />
+										<strong class="user__name">Некто</strong>
+										<small class="date">23 февраля 2013</small>
+									</div>
+									<div class="question-single__answer__text">
+										Здравствуйте! Необходимо без применения сварки провести ремонт днища стального бака 
+										диаметром 2 метра. Из-за коррозии появились сквозные отверстия (т.н. "ситовидность")
+										Хотелось бы залить днище каким-нибудь твердеющим составом или эластичной мастикой. 
+										Что Вы можете посоветовать из материалов? Можете ли порекомендовать профессиональных исполнителей?
+									</div>
 								</div>
-								<div class="answer_text">
-									Здравствуйте! Необходимо без применения сварки провести ремонт днища стального бака 
-									диаметром 2 метра. Из-за коррозии появились сквозные отверстия (т.н. "ситовидность")
-									Хотелось бы залить днище каким-нибудь твердеющим составом или эластичной мастикой. 
-									Что Вы можете посоветовать из материалов? Можете ли порекомендовать профессиональных исполнителей?
-								</div>
+								
+								
 							</div>
+							
 							
 							<div class="faq-nav">
 								<a href="#" class="prev-link"><i class="ico ico_prev_arrow"></i>Предыдущий вопрос</a>
@@ -121,13 +125,11 @@
 								<a href="#" class="all-questions-link">Все вопросы (100500)</a>
 							</div>
 							
-							
-							
-						</div>
+					
 						
 							
 							
-						<div class="comments comments_faq">
+						<div class="comments">
 							<div class="comments-head">
 								<h3>Комментарии (122)</h3>
 							</div>
@@ -151,8 +153,10 @@
 										полимочевины... Оборудование какого производителя выбрать? Graco или GAMA?
 									</div>
 								</li>
-							</ul>
-							<div class="add-comment">
+							</ul>								
+						</div>
+						
+						<div class="add-comment add-comment_question">
 								<h3>Ваш комментарий</h3>
 								<form class="form  comments-form">
 									<fieldset class="round-form">
@@ -161,12 +165,11 @@
 										<input type="submit" class="btn btn_silver" value="Post as Stranger" />
 									</fieldset>
 								</form>
-							</div>	
-						</div>
+							</div>
 					
 
 						<h2 class="subtitle">Остались вопросы?</h2>
-						<form action="#" method="get" class="form round-form question-from">
+						<form action="#" method="get" class="form round-form question-form">
 							<fieldset>
 								<input class="field field_title" type="text" name="question-title" id="question-title" placeholder="Заголовок..." />
 								<textarea class="field field_message" cols="10" rows="5" name="question-text" id="question-text" placeholder="Сообщение..."></textarea>

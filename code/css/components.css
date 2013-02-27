@@ -538,7 +538,7 @@ a.bottom-contacts__item .ico {
     font-family: 'PTSansNarrowBold';
     background: url(../images/bg/faq-block-title.png) no-repeat 0 0;
     height: 26px;
-    line-height: 25px;
+    line-height: 26px;
     padding: 0 0 17px 16px;
     margin: 0 0 0 -3px;
     font-weight: normal;
@@ -1499,33 +1499,33 @@ a.bottom-contacts__item .ico {
 /* questions form < */
 
 
-.question-from {
+.question-form {
     background: #f8f7f2 url(../images/bg/question-form-bg.png) repeat-x 0 0;
     margin-bottom: 60px;
 }
 
 
-.question-from .field_title {
+.question-form .field_title {
     width: 790px;
     border-bottom: 1px solid #d3d3d3;
     height: 18px;
 }
-.question-from .field_message {
+.question-form .field_message {
     width: 790px;
     border-bottom: 1px solid #d3d3d3;
     height: 60px;
 }
-.question-from .field_name {
+.question-form .field_name {
     width: 365px;
     border-right: 1px solid #d3d3d3;
     height: 18px;
 }
-.question-from .field_email {
+.question-form .field_email {
     width: 300px;
     height: 18px;
 }
 
-.question-from .btn_blue {
+.question-form .btn_blue {
     width: 97px;
     position: absolute;
     text-align: center;
@@ -1698,6 +1698,76 @@ a.bottom-contacts__item .ico {
 
 /* block_auth > */
 
+/* faq single page < */
+
+.question-single {
+	border-top:1px dotted #000;
+	border-bottom:1px dotted #000;
+	padding: 20px 60px 0 35px;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.question-single__title {
+	position: relative;
+	background: url("../images/bg/title-arrow.png") no-repeat scroll 0 4px transparent;
+    color: #000000;
+    font-family: 'arialnarrow';
+    font-size: 27px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    padding-left: 35px;
+	margin-left: -35px;
+	text-transform: none;
+}
+
+.question-single__text {
+	font-size: 23px;
+	font-style: normal;
+	color:#262627;
+	font-family: 'arialnarrow';
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+.user_author {
+	margin-bottom: 13px;
+}
+
+.user_author .user__img {
+	height: 24px;
+	width: 24px;
+}
+
+.user_author .user__name {
+	padding: 0 5px;
+}
+.user_author .date {
+	color:#7f7f7f;
+	font-size: 11px;
+}
+
+.question-single__answer {
+	margin-top: 7px;
+	border-top:1px dotted #000;
+	padding-top: 20px;
+	padding-left: 29px;
+	margin-bottom: 30px;
+}
+
+.question-single__answer__text {
+	color: #262627;
+	font-size: 19px;
+	line-height: 25px;
+	font-family: 'arialnarrow';
+}
+
+.faq-nav {
+	position: relative;
+	height:37px;
+	margin-bottom: 20px;
+}
+
+/* faq single page > */
 
 span.dm_current {
     cursor: default;
