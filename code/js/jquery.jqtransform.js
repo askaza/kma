@@ -74,56 +74,8 @@
 		$('a.jqTransformCheckbox, a.jqTransformRadio', f).removeClass('jqTransformChecked');
 		$('input:checkbox, input:radio', f).each(function(){if(this.checked){$('a', $(this).parent()).addClass('jqTransformChecked');}});
 	};
-
-	/***************************
-	  Buttons
-	 ***************************/
-	$.fn.jqTransInputButton = function(){
-		return this.each(function(){
-			var newBtn = $('<button id="'+ this.id +'" name="'+ this.name +'" type="'+ this.type +'" class="'+ this.className +' jqTransformButton"><span><span>'+ $(this).attr('value') +'</span></span>')
-				.hover(function(){newBtn.addClass('jqTransformButton_hover');},function(){newBtn.removeClass('jqTransformButton_hover')})
-				.mousedown(function(){newBtn.addClass('jqTransformButton_click')})
-				.mouseup(function(){newBtn.removeClass('jqTransformButton_click')})
-			;
-			$(this).replaceWith(newBtn);
-		});
-	};
 	
-	/***************************
-	  Text Fields 
-	 ***************************/
-	$.fn.jqTransInputText = function(){
-		return this.each(function(){
-			var $input = $(this);
 	
-			if($input.hasClass('jqtranformdone') || !$input.is('input')) {return;}
-			$input.addClass('jqtranformdone');
-	
-			var oLabel = jqTransformGetLabel($(this));
-			oLabel && oLabel.bind('click',function(){$input.focus();});
-	
-			var inputSize=$input.width();
-			if($input.attr('size')){
-				inputSize = $input.attr('size')*10;
-				$input.css('width',inputSize);
-			}
-			
-			$input.addClass("jqTransformInput").wrap('<div class="jqTransformInputWrapper"><div class="jqTransformInputInner"><div></div></div></div>');
-			var $wrapper = $input.parent().parent().parent();
-			$wrapper.css("width", inputSize+10);
-			$input
-				.focus(function(){$wrapper.addClass("jqTransformInputWrapper_focus");})
-				.blur(function(){$wrapper.removeClass("jqTransformInputWrapper_focus");})
-				.hover(function(){$wrapper.addClass("jqTransformInputWrapper_hover");},function(){$wrapper.removeClass("jqTransformInputWrapper_hover");})
-			;
-	
-			/* If this is safari we need to add an extra class */
-			$.browser.safari && $wrapper.addClass('jqTransformSafari');
-			$.browser.safari && $input.css('width',$wrapper.width()+16);
-			this.wrapper = $wrapper;
-			
-		});
-	};
 	
 	/***************************
 	  Check Boxes 
@@ -354,10 +306,10 @@
 			//$('input:submit, input:reset, input[type="button"]', this).jqTransInputButton();
 			//$('input:text, input:password', this).jqTransInputText();
 			$('input:checkbox', this).jqTransCheckBox();
-			$('input:radio', this).jqTransRadio();
+			//$('input:radio', this).jqTransRadio();
 			//$('textarea', this).jqTransTextarea();
 			
-			if( $('select', this).jqTransSelect().length > 0 ){jqTransformAddDocumentListener();}
+			//if( $('select', this).jqTransSelect().length > 0 ){jqTransformAddDocumentListener();}
 			selfForm.bind('reset',function(){var action = function(){jqTransformReset(this);}; window.setTimeout(action, 10);});
 			
 			//preloading dont needed anymore since normal, focus and hover image are the same one

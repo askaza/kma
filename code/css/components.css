@@ -1801,6 +1801,41 @@ a.bottom-contacts__item .ico {
 }
 /* faq single page > */
 
+
+/* order-form < */
+
+.request-form {
+	margin-top: 20px;
+	border-top:1px dotted #000;
+	padding-top: 20px;
+}
+.request-form fieldset {
+	margin-bottom: 20px;
+	border-bottom:1px dotted #000;
+	padding-bottom: 20px;
+}
+.fieldset__title {
+	background: url("../images/bg/title-arrow.png") no-repeat scroll 0 0px transparent;
+    color: #000000;
+    font-family: 'arialnarrow';
+    font-size: 19px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+	text-transform: none;
+}
+.request-form .fields-list {
+	position: relative;
+	margin-left: -55px;
+}
+.request-form .fields-list__item_column {
+	float: left;
+	width: 385px;
+	margin-left: 55px;
+}
+
+/* order-form > */
+
 span.dm_current {
     cursor: default;
 }

@@ -362,24 +362,31 @@ textarea.field_error::-webkit-input-placeholder { color: #e91d02; }
 	line-height: 15px;
 }
 
+.form-text {
+	border-top:1px dotted #000;
+	padding-top: 15px;
+	color: #a40d21;
+	font-family: 'arialnarrow';
+	font-size: 19px;
+	line-height: 25px;
+}
+.form-text span {
+	color: #000;
+}
+
 .jqTransformHidden {display: none;}
 
 .jqTransformCheckbox {
-    background: url(../images/bg/icons.png) no-repeat -33px -36px;;
+    background: url(../images/bg/icons.png) no-repeat -32px -155px;;
     vertical-align: top;
-    height: 13px;
-    width: 13px;
+    height: 20px;
+    width: 20px;
     display:inline-block;
 }
 .jqTransformCheckbox.jqTransformChecked {
-    background-position:-33px -51px;
+    background-position:-56px -155px;
 }
 
-.jqTransformRadioCheckbox {
-    margin:-1px 3px 0;
-    display: inline-block;
-    vertical-align: middle;
-}
 
 
 .btn {
