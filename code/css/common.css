@@ -141,6 +141,19 @@ p {
 	font-family: 'arialnarrow';
 	margin-bottom: 12px;
 }
+
+.title a {
+	color: #000000;
+    font-family: 'arialnarrow';
+    font-size: 33px;
+    margin-bottom: 12px;
+	text-decoration: none;
+}
+.title a:hover {
+	text-decoration: none;
+	color: #305193;
+}
+
 .subtitle {
 	color: #000;
 	font-size: 27px;
@@ -251,6 +264,7 @@ input, textarea, select {
 }
 textarea {
 	resize:none;
+	overflow: auto;
 }
 
 label {
@@ -482,6 +496,21 @@ textarea.field_error::-webkit-input-placeholder { color: #e91d02; }
     height: 16px;
     width: 21px;
 }
+
+.ico_prev_arrow {
+	background-position: -88px -91px;
+    height: 16px;
+    width: 21px;
+}
+
+.ico_next_arrow {
+	background-position: -117px -91px;
+    height: 16px;
+    width: 21px;
+}
+
+
+
 /* content styles <  */
 
 .pure-content, 

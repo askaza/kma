@@ -1440,18 +1440,6 @@ a.bottom-contacts__item .ico {
     margin-bottom: 50px;
 }
 
-.section_faq .title a {
-	 color: #000000;
-    font-family: 'arialnarrow';
-    font-size: 33px;
-    margin-bottom: 12px;
-	text-decoration: none;
-}
-.section_faq .title a:hover {
-	text-decoration: none;
-	color: #305193;
-}
-
 .section_faq .questions-list {
     counter-reset:list_item;
     border-top: 1px dotted #000;
@@ -1761,12 +1749,56 @@ a.bottom-contacts__item .ico {
 	font-family: 'arialnarrow';
 }
 
+.add-comment_question {
+	padding-bottom: 35px;
+	border-bottom: 1px dotted #000;
+	margin-bottom: 25px;
+}
+
+
 .faq-nav {
 	position: relative;
 	height:37px;
 	margin-bottom: 20px;
+	text-align: center;
+	line-height: 37px;
 }
 
+
+.faq-nav .prev-link, 
+.faq-nav .next-link {
+	border:1px solid #e8e8e8;
+	padding: 0 12px;
+	height: 34px;
+	line-height: 34px;
+	border-radius:5px;
+	display: block;
+	position: absolute;
+	top:0;
+	text-align: left;
+}
+
+.faq-nav .ico {
+	position: absolute;
+	top:10px;
+}
+
+.faq-nav .next-link {
+	right: 0;
+	padding-right: 50px;
+}
+
+.faq-nav .next-link .ico {
+	right:12px;	
+}
+
+.faq-nav .prev-link {
+	padding-left: 50px;
+	left: 0;
+}
+.faq-nav .prev-link .ico {
+	left:12px;
+}
 /* faq single page > */
 
 span.dm_current {
