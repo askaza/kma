@@ -268,45 +268,18 @@ textarea {
 }
 
 label {
-    color:#555555;
-    font-size: 18px;
-    text-shadow:1px 1px 1px #ffffff;
-    display: block;
-    margin-bottom: 5px;
-    margin-left: 3px;
-}
-
-.field_text {
-    border:1px solid #cecece;
-    background: #fff;
-    border-radius: 5px;
-    padding: 5px 10px;
-    font-size: 12px;
-    color: #010000;
-    font-family: 'Arial', 'Helvetica', sans-serif;
-    height: 14px;
-    position: relative;
-    behavior: url(PIE.htc);
-}
-
-
-.field_textarea {
-    border:1px solid #cecece;
-    background: #fff;
-    border-radius: 5px;
-    padding: 5px 10px;
-    font-size: 12px;
-    color: #010000;
-    height: 102px;
-    resize: none;
-    font-family: 'Arial', 'Helvetica', sans-serif;
-    position: relative;
-    overflow: auto;
+    color:#000;
+    font-size: 19px;
+    float: left;
+    width: 110px;
+    text-align: left;
+    font-family: 'arialnarrow';
 }
 
 .field_chbox_box {
     position: relative;
-    padding-left: 20px;
+    padding-left: 35px;
+    display: block;
 }
 .field_chbox_box input,
 .field_chbox_box .jqTransformCheckboxWrapper  {
@@ -315,10 +288,13 @@ label {
     left:0;
 }
 .field_chbox_box label {
-    position: relative !important;
-    width: auto !important;
-    top:auto !important;
-    text-align: left !important;
+    position: relative;
+    width: auto;
+    text-align: left;
+    float: none;
+}
+.form .fields-list .field_file {
+    height: 24px ;
 }
 
 .field_error.placeholder {
@@ -430,7 +406,7 @@ textarea.field_error::-webkit-input-placeholder { color: #e91d02; }
 	border:1px solid #a0a1a3;
 	width: 128px;
 	text-align: center;
-	font-size: 13px;	
+	font-size: 13px;
 	color: #5c5c5c;
     height: 32px;
     line-height: 31px;
@@ -520,7 +496,7 @@ textarea.field_error::-webkit-input-placeholder { color: #e91d02; }
 
 /* content styles <  */
 
-.pure-content, 
+.pure-content,
 .pure-content p {
 	font-family: 'arialnarrow';
 	color: #1b1a1a;
@@ -544,7 +520,7 @@ textarea.field_error::-webkit-input-placeholder { color: #e91d02; }
 	display: inline-block;
 	vertical-align: top;
 }
-.important-text, 
+.important-text,
 .important-text p {
 	color: #626262;
 	font-size: 23px;
@@ -596,7 +572,7 @@ textarea.field_error::-webkit-input-placeholder { color: #e91d02; }
 	color: #a93a11;
 	font-weight: normal;
 }
-.pure-content ul, 
+.pure-content ul,
 .pure-content ol {
 	margin: 19px 0 19px 25px;
 	padding: 0;

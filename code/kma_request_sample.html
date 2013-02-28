@@ -17,6 +17,7 @@
 	<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
 	<script type="text/javascript" src="js/jquery-ui-1.10.0.custom.min.js"></script>
 	<script type="text/javascript" src="js/slides.min.jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.jqtransform.js"></script>
 	<script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
         <script type="text/javascript" src="js/common.js"></script>
 
@@ -28,7 +29,7 @@
     <body>
         <div class="wrap"> <!-- .wrap -->
 	    <div class="header"> <!-- .header -->
-		<div class="top"> <!-- .top --->
+		<div class="top"> <!-- .top -->
 		    <div class="section_logo">
 			<h1 class="logo"><a href="#"><img src="images/logo.png" alt="KMA Полимер" title="KMA Полимер" /></a></h1>
 			<div class="slogan">
@@ -82,169 +83,123 @@
 	    <div class="main">   <!-- .main -->
 		<div class="columns"> <!-- .columns -->
 		    <div class="column_left"> <!-- .column_left -->
-			<div class="section_faq">
-			    <h1 class="title">Часто задаваемые вопросы</h1>
-			    <ol class="questions-list">
-				<li><a href="#">Как рассчитать фактическую площадь напыления ППУ на стены из профлиста?</a></li>
-				<li><a href="#">В мансардном этаже имеется пара металлических балок (швеллеры, скрепленные перемычками), которые частично утоплены
-					в кровельный «пирог». Чем их лучше обработать, чтобы предотвратить образование конденсата?</a></li>
-				<li><a href="#">можно ли использовать заливное ППУ в закрытой бочке дольше гарантийного срока хранения? </a></li>
-				<li><a href="#">как увеличить время старта ппу?</a></li>
-				<li><a href="#">Какая плотность и толщина ППУ должна быть при утеплении готовой крыши изнутри?</a></li>
-				<li><a href="#">перед нанесением ППУ на ангар с новой оцинковки обязательно нужно обезжирить поверхность? Если да, то чем и как?</a></li>
-				<li><a href="#">Как рассчитать фактическую площадь напыления ППУ на стены из профлиста?</a></li>
-				<li><a href="#">В мансардном этаже имеется пара металлических балок (швеллеры, скрепленные перемычками), которые частично утоплены
-					в кровельный «пирог». Чем их лучше обработать, чтобы предотвратить образование конденсата?</a></li>
-				<li><a href="#">можно ли использовать заливное ППУ в закрытой бочке дольше гарантийного срока хранения? </a></li>
-				<li><a href="#">как увеличить время старта ппу?</a></li>
-				<li><a href="#">Какая плотность и толщина ППУ должна быть при утеплении готовой крыши изнутри?</a></li>
-				<li><a href="#">перед нанесением ППУ на ангар с новой оцинковки обязательно нужно обезжирить поверхность?
-					Если да, то чем и как?</a></li>
-			    </ol>
 
+			<h1 class="title">Заказ образцов</h1>
+			<div class="form-text">
+			    Вы можете заказать образцы предлагаемой нами продукции. Заполните, пожалуйста, обязательные поля,
+			    наш менеджер свяжется с вами и предложит удобный вариант доставки образцов.
 			</div>
 
-			<div class="block block_auth"> <!-- block_auth -->
-			    <div class="block__title"> Оставляя на сайте хотя бы одно сообщение, вы соглашаетесь с настоящими <a href="#">Правилами общения на сайте</a>.</div>
-			    <div class="columns">
-				<div class="column_auth_site">
-				    <div id="tabs" class="auth-tabs">
-					<ul class="auth-tabs__tabs">
-					    <li><a href="#tab-1">Регистрация</a></li>
-					    <li><a href="#tab-2">Вход</a></li>
-					</ul>
-					<div class="auth-tabs__content">
-					    <div id="tab-1" class="auth-tabs__item">
-						<p class="form-note">После заполнения формы на вашу почту будет выслано
-						    письмо для активизации аккаунта. Приятного общения!</p>
-						<div class="form-error">
-						    <h3>Ошибки заполнения формы</h3>
-						    <ul class="errors-list">
-							<li>Заполните пожалуйста поле</li>
-							<li>Введите корректный e-mail</li>
-							<li>Заполните пожалуйста поле</li>
-							<li>Введите код на картинке</li>
-						    </ul>
-						</div>
-						<form class="form auth-form" action="#" method="get">
-						    <fieldset class="round-form">
-							<input type="text" placeholder="Имя..." id="reg-name" name="reg-name" class="field field_name" />
-							<input type="text" placeholder="E-mail..." id="reg-email" name="reg-email" class="field field_email" />
-							<input type="password" placeholder="Пароль..." id="reg-pass" name="reg-pass" class="field field_pass" />
-						    </fieldset>
-						    <fieldset class="capcha">
-							<img class="capcha__img" src="images/capcha.png" alt="" title=""  />
-							<input type="text" placeholder="Код на картинке..." class="capcha__field" id="reg-capcha" name="reg-capcha" />
-						    </fieldset>
-						    <div class="btnset">
-							<input type="submit" value="Зарегистрироваться" class="btn btn_rounded btn_blue" />
-						    </div>
-						</form>
-					    </div>
-					    <div id="tab-2" class="auth-tabs__item">
-						<form class="form auth-form login-form" action="#" method="get">
-						    <fieldset class="round-form">
-							<input type="text" placeholder="Имя..." id="login-name" name="rlogin-name" class="field field_name" />
-							<input type="password" placeholder="Пароль..." id="login-pass" name="login-pass" class="field field_pass" />
-						    </fieldset>
-						    <div class="btnset">
-							<input type="submit" value="Войти" class="btn btn_rounded btn_blue" />
-						    </div>
-						</form>
-					    </div>
-					</div>
-				    </div>
-				</div>
-				<div class="column_auth_fb">
-				    <div class="btn_fb_login">
-					Вход через Facebook аккаунт
-				    </div>
-				</div>
-			    </div>
-			</div> <!-- /.block_auth -->
-
-			<h2 class="subtitle">Остались вопросы?</h2>
-			<form action="#" method="get" class="form round-form question-form">
+			<form class="form request-form jqtransform">
 			    <fieldset>
-				<input class="field field_title" type="text" name="question-title" id="question-title" placeholder="Заголовок..." />
-				<textarea class="field field_message" cols="10" rows="5" name="question-text" id="question-text" placeholder="Сообщение..."></textarea>
-				<input class="field field_name" type="text" name="question-name" id="question-name" placeholder="Имя...(можете остаться гостем)" />
-				<input class="field field_email" type="text" name="question-email" id="question-email" placeholder="E-mail...(если хотите получить ответ на почту)" />
-				<input type="submit" class="btn btn_blue" value="Отправить" />
+				<h3 class="fieldset__title">Ваши контактные данные</h3>
+				<ul class="fields-list">
+				    <li class="fields-list__item fields-list__item_column">
+					<label for="request-name">Имя <span class="req">*</span></label>
+					<input type="text" class="field field_name field_error" id="request-name" name="request-name" />
+				    </li>
+				    <li class="fields-list__item fields-list__item_column">
+					<label for="request-company">Организация</label>
+					<input type="text" class="field field_company" id="request-company" name="request-company" />
+				    </li>
+				    <li class="fields-list__item fields-list__item_column">
+					<label for="request-phone">Телефон <span class="req">*</span></label>
+					<input type="text" class="field field_phone" id="request-phone" name="request-phone" />
+				    </li>
+				    <li class="fields-list__item fields-list__item_column">
+					<label for="request-email">E-mail</label>
+					<input type="text" class="field field_email" id="request-email" name="request-email" />
+				    </li>
+				    <li class="fields-list__item">
+					<label for="request-address">Адрес</label>
+					<input type="text" class="field field_address" id="request-address" name="request-address" />
+				    </li>
+				</ul>
 			    </fieldset>
+			    <fieldset>
+				<h3 class="fieldset__title">Выберите тип поверхности (отметьте интересующие вас направления, возможно несколько вариантов):<span class="req">*</span></h3>
+				<div class="columns columns_content">
+				    <div class="column_left">
+					<h4>В строительстве</h4>
+					<ul class="fields-list">
+					    <li class="fields-list__item field_chbox_box">
+						<label for="construction-chbox1">напольные покрытия</label>
+						<input type="checkbox" class="field field_chbox"  name="construction-chbox" id="construction-chbox1" />
+					    </li>
+					    <li class="fields-list__item field_chbox_box">
+						<label>строительство и ремонт крыши</label>
+						<input type="checkbox" class="field field_chbox"  name="construction-chbox" id="construction-chbox2" />
+					    </li>
+					    <li class="fields-list__item field_chbox_box">
+						<label for="construction-chbox3">стены дома</label>
+						<input type="checkbox" class="field field_chbox"  name="construction-chbox" id="construction-chbox3" />
+					    </li>
+					    <li class="fields-list__item field_chbox_box">
+						<label for="construction-chbox4">трубы и коммуникации</label>
+						<input type="checkbox" class="field field_chbox"  name="construction-chbox" id="construction-chbox4" />
+					    </li>
+					    <li class="fields-list__item field_chbox_box">
+						<label for="construction-chbox5">подвалы, цоколи и фундаменты</label>
+						<input type="checkbox" class="field field_chbox"  name="construction-chbox" id="construction-chbox5" />
+					    </li>
+					</ul>
+				    </div>
+				    <div class="column_right">
+					<h4>На предприятии</h4>
+					<ul class="fields-list">
+					    <li class="fields-list__item field_chbox_box">
+						<label for="org-chbox1">металлоконструкции</label>
+						<input type="checkbox" class="field field_chbox"  name="org-chbox" id="org-chbox1" />
+					    </li>
+					    <li class="fields-list__item field_chbox_box">
+						<label for="org-chbox2">ёмкости и резервуары</label>
+						<input type="checkbox" class="field field_chbox"  name="org-chbox" id="org-chbox2" />
+					    </li>
+					    <li class="fields-list__item field_chbox_box">
+						<label for="org-chbox3">магистральные трубопроводы</label>
+						<input type="checkbox" class="field field_chbox"  name="org-chbox" id="org-chbox3" />
+					    </li>
+					    <li class="fields-list__item field_chbox_box">
+						<label for="org-chbox4">насосные станции</label>
+						<input type="checkbox" class="field field_chbox"  name="org-chbox" id="org-chbox4" />
+					    </li>
+					    <li class="fields-list__item field_chbox_box">
+						<label for="org-chbox5">нефтебазы</label>
+						<input type="checkbox" class="field field_chbox"  name="org-chbox" id="org-chbox5" />
+					    </li>
+					    <li class="fields-list__item field_chbox_box">
+						<label for="org-chbox6">фитинги</label>
+						<input type="checkbox" class="field field_chbox"  name="org-chbox" id="org-chbox6" />
+					    </li>
+					</ul>
+				    </div>
+				</div>
+
+			    </fieldset>
+			    <fieldset class="deal">
+				<h3 class="fieldset__title">Выберите цели применения полимеров (воможно несколько вариантов): <span class="req">*</span></h3>
+				<ul class="fields-list">
+				    <li class="fields-list__item field_chbox_box">
+					<label for="deal-chbox1">Теплоизоляция</label>
+					<input type="checkbox" class="field field_chbox"  name="deal-chbox" id="deal-chbox1" />
+				    </li>
+				    <li class="fields-list__item field_chbox_box">
+					<label for="request-company">Гидроизоляция</label>
+					<input type="checkbox" class="field field_chbox"  name="deal-chbox" id="deal-chbox2" />
+				    </li>
+				    <li class="fields-list__item field_chbox_box">
+					<label for="request-phone">Защита поверхностей</label>
+					<input type="checkbox" class="field field_chbox"  name="deal-chbox" id="deal-chbox3" />
+				    </li>
+				</ul>
+			    </fieldset>
+
+			    <div class="btnset">
+				<input type="submit" value="Отправить" class="btn btn_rounded btn_blue" />
+			    </div>
 			</form>
 
-			<div class="columns columns_content">
-			    <div class="column_left">
-				<div class="block block_gray-bordered_light">
-				    <h2 class="block__title">новые вопросы</h2>
-				    <ul class="questions-list">
-					<li class="questions-list__item">
-					    <div class="question">
-						<a class="question__title" href="#"><i class="ico ico_comments">34</i> Утеплить балкон</a>
-						<strong class="question__author">Гавриил</strong>
-						<div class="question__text">
-						    Не знаю у кого ещё спросить. Все форумы о ППУ не действуют.
-						    Пожалуйста просветите хоть ВЫ!!! При напылении в закрытом помещении...
-						</div>
-					    </div>
-					</li>
-					<li class="questions-list__item">
-					    <div class="question">
-						<a class="question__title" href="#"><i class="ico ico_comments">2</i> Какой расход ППУ на м2? Необходимо утеплить цоколь.</a>
-						<strong class="question__author">Yashur</strong>
-						<div class="question__text">
-						    Приветствую! Имею пока неутепленную мансарду.
-						    Изначально при строительстве задумывал делать вентилируемую кровлю с мин.ватой...
-						</div>
-					    </div>
-					</li>
-					<li class="questions-list__item">
-					    <div class="question">
-						<a class="question__title" href="#"><i class="ico ico_comments">2</i> Graco или GAMA</a>
-						<strong class="question__author">гость</strong>
-						<div class="question__text">
-						    Наша компания рассматривает приобретение оборудования для производства пенополиуретана и
-						    полимочевины...
-						    Оборудование какого производителя выбрать? Graco или GAMA?
-						</div>
-					    </div>
-					</li>
-				    </ul>
-				</div>
-			    </div>
-			    <div class="column_right">
-				<div class="block block_gray-bordered_light">
-				    <h2 class="block__title">Популярные обсуждения на сайте</h2>
-				    <ul class="questions-list">
-					<li class="questions-list__item">
-					    <div class="question">
-						<a href="#" class="question__title"><i class="ico ico_comments">34</i> Утеплить балкон</a>
-						<div class="question-category">Полимеры</div>
-					    </div>
-					</li>
-					<li class="questions-list__item">
-					    <div class="question">
-						<a href="#" class="question__title"><i class="ico ico_comments">2</i> Какой расход ППУ на м2? Необходимо утеплить цоколь.</a>
-						<div class="question-category">Утепление крыш</div>
-					    </div>
-					</li>
-					<li class="questions-list__item">
-					    <div class="question">
-						<a href="#" class="question__title"><i class="ico ico_comments">34</i> Утеплить балкон</a>
-						<div class="question-category">Полимеры</div>
-					    </div>
-					</li>
-					<li class="questions-list__item">
-					    <div class="question">
-						<a href="#" class="question__title"><i class="ico ico_comments">2</i> Какой расход ППУ на м2? Необходимо утеплить цоколь.</a>
-						<div class="question-category">Утепление крыш</div>
-					    </div>
-					</li>
-				    </ul>
-				</div>
-			    </div>
-			</div>
+
 
 		    </div> <!-- /.column_left -->
 
@@ -410,7 +365,6 @@
 				<li class="menu__item"><a href="#">гидроизоляция домов</a></li>
 				<li class="menu__item"><a href="#">гидроизоляция фундаментов</a></li>
 			    </ul>
-
 
 
 			</li>

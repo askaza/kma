@@ -17,6 +17,7 @@
 	<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
 	<script type="text/javascript" src="js/jquery-ui-1.10.0.custom.min.js"></script>
 	<script type="text/javascript" src="js/slides.min.jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.jqtransform.js"></script>
 	<script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
         <script type="text/javascript" src="js/common.js"></script>
 
@@ -28,7 +29,7 @@
     <body>
         <div class="wrap"> <!-- .wrap -->
 	    <div class="header"> <!-- .header -->
-		<div class="top"> <!-- .top --->
+		<div class="top"> <!-- .top -->
 		    <div class="section_logo">
 			<h1 class="logo"><a href="#"><img src="images/logo.png" alt="KMA Полимер" title="KMA Полимер" /></a></h1>
 			<div class="slogan">
@@ -82,97 +83,71 @@
 	    <div class="main">   <!-- .main -->
 		<div class="columns"> <!-- .columns -->
 		    <div class="column_left"> <!-- .column_left -->
-			<div class="section_faq">
-			    <h1 class="title">Часто задаваемые вопросы</h1>
-			    <ol class="questions-list">
-				<li><a href="#">Как рассчитать фактическую площадь напыления ППУ на стены из профлиста?</a></li>
-				<li><a href="#">В мансардном этаже имеется пара металлических балок (швеллеры, скрепленные перемычками), которые частично утоплены
-					в кровельный «пирог». Чем их лучше обработать, чтобы предотвратить образование конденсата?</a></li>
-				<li><a href="#">можно ли использовать заливное ППУ в закрытой бочке дольше гарантийного срока хранения? </a></li>
-				<li><a href="#">как увеличить время старта ппу?</a></li>
-				<li><a href="#">Какая плотность и толщина ППУ должна быть при утеплении готовой крыши изнутри?</a></li>
-				<li><a href="#">перед нанесением ППУ на ангар с новой оцинковки обязательно нужно обезжирить поверхность? Если да, то чем и как?</a></li>
-				<li><a href="#">Как рассчитать фактическую площадь напыления ППУ на стены из профлиста?</a></li>
-				<li><a href="#">В мансардном этаже имеется пара металлических балок (швеллеры, скрепленные перемычками), которые частично утоплены
-					в кровельный «пирог». Чем их лучше обработать, чтобы предотвратить образование конденсата?</a></li>
-				<li><a href="#">можно ли использовать заливное ППУ в закрытой бочке дольше гарантийного срока хранения? </a></li>
-				<li><a href="#">как увеличить время старта ппу?</a></li>
-				<li><a href="#">Какая плотность и толщина ППУ должна быть при утеплении готовой крыши изнутри?</a></li>
-				<li><a href="#">перед нанесением ППУ на ангар с новой оцинковки обязательно нужно обезжирить поверхность?
-					Если да, то чем и как?</a></li>
-			    </ol>
 
+			<h1 class="title">Заказ образцов</h1>
+			<div class="form-text">
+			    Спасибо! Мы свяжемся с вами в течение дня. Вы хотите <a href="#">рассчитать стоимость</a>?
 			</div>
 
-			<div class="block block_auth"> <!-- block_auth -->
-			    <div class="block__title"> Оставляя на сайте хотя бы одно сообщение, вы соглашаетесь с настоящими <a href="#">Правилами общения на сайте</a>.</div>
-			    <div class="columns">
-				<div class="column_auth_site">
-				    <div id="tabs" class="auth-tabs">
-					<ul class="auth-tabs__tabs">
-					    <li><a href="#tab-1">Регистрация</a></li>
-					    <li><a href="#tab-2">Вход</a></li>
-					</ul>
-					<div class="auth-tabs__content">
-					    <div id="tab-1" class="auth-tabs__item">
-						<p class="form-note">После заполнения формы на вашу почту будет выслано
-						    письмо для активизации аккаунта. Приятного общения!</p>
-						<div class="form-error">
-						    <h3>Ошибки заполнения формы</h3>
-						    <ul class="errors-list">
-							<li>Заполните пожалуйста поле</li>
-							<li>Введите корректный e-mail</li>
-							<li>Заполните пожалуйста поле</li>
-							<li>Введите код на картинке</li>
-						    </ul>
-						</div>
-						<form class="form auth-form" action="#" method="get">
-						    <fieldset class="round-form">
-							<input type="text" placeholder="Имя..." id="reg-name" name="reg-name" class="field field_name" />
-							<input type="text" placeholder="E-mail..." id="reg-email" name="reg-email" class="field field_email" />
-							<input type="password" placeholder="Пароль..." id="reg-pass" name="reg-pass" class="field field_pass" />
-						    </fieldset>
-						    <fieldset class="capcha">
-							<img class="capcha__img" src="images/capcha.png" alt="" title=""  />
-							<input type="text" placeholder="Код на картинке..." class="capcha__field" id="reg-capcha" name="reg-capcha" />
-						    </fieldset>
-						    <div class="btnset">
-							<input type="submit" value="Зарегистрироваться" class="btn btn_rounded btn_blue" />
-						    </div>
-						</form>
-					    </div>
-					    <div id="tab-2" class="auth-tabs__item">
-						<form class="form auth-form login-form" action="#" method="get">
-						    <fieldset class="round-form">
-							<input type="text" placeholder="Имя..." id="login-name" name="rlogin-name" class="field field_name" />
-							<input type="password" placeholder="Пароль..." id="login-pass" name="login-pass" class="field field_pass" />
-						    </fieldset>
-						    <div class="btnset">
-							<input type="submit" value="Войти" class="btn btn_rounded btn_blue" />
-						    </div>
-						</form>
-					    </div>
-					</div>
-				    </div>
-				</div>
-				<div class="column_auth_fb">
-				    <div class="btn_fb_login">
-					Вход через Facebook аккаунт
-				    </div>
-				</div>
-			    </div>
-			</div> <!-- /.block_auth -->
 
-			<h2 class="subtitle">Остались вопросы?</h2>
-			<form action="#" method="get" class="form round-form question-form">
-			    <fieldset>
-				<input class="field field_title" type="text" name="question-title" id="question-title" placeholder="Заголовок..." />
-				<textarea class="field field_message" cols="10" rows="5" name="question-text" id="question-text" placeholder="Сообщение..."></textarea>
-				<input class="field field_name" type="text" name="question-name" id="question-name" placeholder="Имя...(можете остаться гостем)" />
-				<input class="field field_email" type="text" name="question-email" id="question-email" placeholder="E-mail...(если хотите получить ответ на почту)" />
-				<input type="submit" class="btn btn_blue" value="Отправить" />
-			    </fieldset>
-			</form>
+			<div class="articles-list article-promo"> <!-- .articles-list -->
+			    <h2 class="article-promo-title">Возможно, вам будет интересно:</h2>
+			    <div class="block_article">
+				<div class="article">
+				    <h3 class="article__title"><a href="#"><i class="ico ico_comments">0</i>Как расчитать гидроизоляцию?</a></h3>
+				    <img width="340" height="160" src="images/articles/1.jpg" alt="" title="" class="article__image">
+				    <div class="article__text">
+					Основное руководство над своим телом, несомненно, заключается
+					в умении создавать правильные привычки и неуклонно им следовать.
+					От этих приобретенных привычек и зависит вся личная.
+				    </div>
+				</div>
+				<div class="block__bottom">
+				    <a href="#" class="more-link">Читать дальше</a>
+				    <a class="articles-link" href="#">Задать вопрос</a>
+				</div>
+				<ul class="menu categories-list">
+				    <li class="menu__item"><a href="#"><i class="ico ico_comments">3</i>утепление полов</a></li>
+				    <li class="menu__item"><a href="#"><i class="ico ico_comments">3</i>утепление крыш</a></li>
+				    <li class="menu__item"><a href="#"><i class="ico ico_comments">3</i>утепление стен</a></li>
+				    <li class="menu__item"><a href="#"><i class="ico ico_comments">3</i>утепление труб</a></li>
+				    <li class="menu__item"><a href="#"><i class="ico ico_comments">3</i>утепление домов</a></li>
+				    <li class="menu__item"><a href="#"><i class="ico ico_comments">3</i>утепление фундаментов</a></li>
+				    <li class="menu__item"><a href="#"><i class="ico ico_comments">3</i>утепление хранилищ</a></li>
+				    <li class="menu__item"><a href="#"><i class="ico ico_comments">3</i>утепление ёмкостей</a></li>
+				</ul>
+			    </div>
+			</div>
+			<div class="section_materials"> <!-- .section_materials -->
+			    <div class="block block_yellow-bordered block_what_is">
+				<img title="" alt="" src="images/materials/1.png">
+				<h3 class="block_what_is__title">
+				    <a href="#">Высокореактивные полиуретаны -</a><br>
+				    <a class="what_is_link" href="#">что это?</a>
+				</h3>
+			    </div>
+			    <div class="block block_yellow-bordered block_what_is">
+				<img title="" alt="" src="images/materials/4.png">
+				<h3 class="block_what_is__title">
+				    <a href="#"> Поликарбамид - </a><br>
+				    <a href="#" class="what_is_link">что это?</a>
+				</h3>
+			    </div>
+			    <div class="block block_yellow-bordered block_what_is">
+				<img title="" alt="" src="images/materials/3.png">
+				<h3 class="block_what_is__title">
+				    <a href="#">Полимерная мастика -</a><br>
+				    <a class="what_is_link" href="#">что это?</a>
+				</h3>
+			    </div>
+			    <div class="block block_yellow-bordered block_what_is">
+				<img title="" alt="" src="images/materials/2.png">
+				<h3 class="block_what_is__title">
+				    <a href="#"> Пенополиуретан - </a><br>
+				    <a href="#" class="what_is_link">что это?</a>
+				</h3>
+			    </div>
+			</div>
 
 			<div class="columns columns_content">
 			    <div class="column_left">
@@ -245,6 +220,7 @@
 				</div>
 			    </div>
 			</div>
+
 
 		    </div> <!-- /.column_left -->
 
@@ -410,7 +386,6 @@
 				<li class="menu__item"><a href="#">гидроизоляция домов</a></li>
 				<li class="menu__item"><a href="#">гидроизоляция фундаментов</a></li>
 			    </ul>
-
 
 
 			</li>
