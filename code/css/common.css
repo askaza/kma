@@ -492,7 +492,16 @@ textarea.field_error::-webkit-input-placeholder { color: #e91d02; }
     width: 21px;
 }
 
-
+.ico_collapsed {
+	background-position: -32px -181px;
+    height: 36px;
+    width: 36px;
+}
+.ico_expanded {
+	background-position: -70px -181px;
+    height: 36px;
+    width: 36px;
+}
 
 /* content styles <  */
 

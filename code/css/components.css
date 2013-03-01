@@ -734,6 +734,9 @@ a.bottom-contacts__item .ico {
 	letter-spacing: normal;
 	padding-top: 9px;
 }
+.comments-list .date {
+	letter-spacing: normal;
+}
 .comment-text {
 	font-size: 13px;
 	font-style: italic;
@@ -1725,7 +1728,7 @@ a.bottom-contacts__item .ico {
 .user_author .user__name {
 	padding: 0 5px;
 }
-.user_author .date {
+ .date {
 	color:#7f7f7f;
 	font-size: 11px;
 }
@@ -1931,6 +1934,64 @@ a.bottom-contacts__item .ico {
      font-size: 15px;
 }
 
+
+.comments-list_user  {
+	margin-top: -20px;
+}
+.comments-list_user .comments-list__item {
+	padding-bottom: 25px;
+}
+.comments-list_user .ico_next_arrow {
+	margin: 2px 7px;
+}
+.comments-list_user .question-category {
+	color:#f16910;
+}
+.comments-list_user .comment-single .date {
+	display: block;
+	margin-top: 8px;
+}
+.comments-list_user .comment-text {
+	font-family: 'arialnarrow';
+	color:#262627;
+	font-size:19px;
+	line-height: 25px;
+	font-style: normal;
+	margin-top: 5px;
+}
+
+
+.user_comment {
+	padding-top: 15px;
+	border-top:1px dotted #000;
+}
+.user_comment h3 {
+	color: #a40d21;
+	margin-bottom: 10px;
+}
+.user_comment .field_message {
+	height: 100px;
+	border:0;
+}
+.user_comment .question-form {
+	margin-bottom: 0;
+}
+
+.comment-head {
+	position: relative;
+}
+
+.comment-head .ico_collapsed, 
+.comment-head .ico_expanded {
+	position: absolute;
+	top:0;
+	right: 0;
+	cursor: pointer;
+}
+
+.comment-other {
+	display: none;
+}
 /* promo article > */
 
 

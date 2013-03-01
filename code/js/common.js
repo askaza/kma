@@ -11,9 +11,16 @@ $(document).ready(function() {
 		$('.articles-list_bottom .block_article:nth-child(odd)').addClass('block_article_odd');
 	}
 
-	$('input, textarea').placeholder();	
+	$('input, textarea').placeholder();
+
+	$('.ico_collapsed').click(function(){
+		$(this).parents('.comment-single').next().slideToggle(500);
+		$(this).toggleClass('ico_expanded');
+	});
 	
 	$('.jqtransform').jqTransform();
+	
+	
 	
 });
 
