@@ -1441,7 +1441,6 @@ a.bottom-contacts__item .ico {
 }
 
 .section_faq .questions-list {
-    counter-reset:list_item;
     border-top: 1px dotted #000;
 }
 
@@ -1451,12 +1450,9 @@ a.bottom-contacts__item .ico {
     padding: 17px 0 17px 52px;
     position: relative;
     border-bottom: 1px dotted #000;
+	list-style: none outside;
 }
-.section_faq .questions-list li:before {
-    content:counter(list_item);
-    counter-increment:list_item;
-}
-.section_faq .questions-list  li:before,
+
 .section_faq .questions-list  li .list-item-before {
     color: #999999;
     font-family: 'Arial';

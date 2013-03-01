@@ -45,11 +45,3 @@ jqTransformRadioWrapper,
 }
 
 
-.section_faq .questions-list li {
-	list-style-type:expression(
-		function(t){
-			t.runtimeStyle.listStyleType = 'none';
-			t.insertAdjacentHTML('afterBegin','<span class="list-item-before">' + (++t.parentNode.IEcounter || (t.parentNode.IEcounter = 1)) + '. </span>');
-		}(this)
-	);
-	}
