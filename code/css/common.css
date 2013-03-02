@@ -140,6 +140,7 @@ p {
 	font-size: 33px;
 	font-family: 'arialnarrow';
 	margin-bottom: 12px;
+	line-height: 33px;
 }
 
 .title a {
@@ -158,7 +159,7 @@ p {
 	color: #000;
 	font-size: 27px;
 	font-family: 'arialnarrow';
-	margin-bottom: 12px;
+	margin-bottom: 22px;
 }
 
 h2 {
@@ -245,6 +246,7 @@ h4 {
  .round-form .field {
     background: none;
     padding:7px 15px;
+    height: 18px;
 }
 .fields-list {
     margin: 0;
@@ -268,12 +270,13 @@ textarea {
 }
 
 label {
-    color:#000;
-    font-size: 19px;
+    color: #000000;
     float: left;
-    width: 110px;
+    font-family: 'PTSansNarrowRegular';
+    font-size: 20px;
+    line-height: 34px;
     text-align: left;
-    font-family: 'arialnarrow';
+    width: 110px;
 }
 
 .field_chbox_box {
@@ -284,7 +287,7 @@ label {
 .field_chbox_box input,
 .field_chbox_box .jqTransformCheckboxWrapper  {
     position: absolute;
-    top:1px;
+    top:6px;
     left:0;
 }
 .field_chbox_box label {
@@ -295,6 +298,7 @@ label {
 }
 .form .fields-list .field_file {
     height: 24px ;
+    margin-top: 5px;
 }
 
 .field_error.placeholder {
@@ -345,6 +349,7 @@ textarea.field_error::-webkit-input-placeholder { color: #e91d02; }
 	font-family: 'arialnarrow';
 	font-size: 19px;
 	line-height: 25px;
+	margin-top: 15px;
 }
 .form-text span {
 	color: #000;
@@ -371,7 +376,7 @@ textarea.field_error::-webkit-input-placeholder { color: #e91d02; }
     position: relative;
     cursor: pointer;
     font-family: 'Arial', 'Helvetica', sans-serif;
-	font-size: 15px;
+	font-size: 14px;
 }
 
 .btn_blue {
@@ -507,17 +512,17 @@ textarea.field_error::-webkit-input-placeholder { color: #e91d02; }
 
 .pure-content,
 .pure-content p {
-	font-family: 'arialnarrow';
-	color: #1b1a1a;
-	font-size: 19px;
+    color: #1B1A1A;
+    font-family: 'PTSansNarrowRegular';
+    font-size: 20px;
 }
 .pure-content p  {
-	margin-bottom: 22px;
+	margin-bottom: 27px;
 }
 .dotted-box {
-	border-top:1px dotted #000000;
-	padding-top: 30px;
-	margin-bottom: 30px;
+    border-top:1px dotted #000000;
+    margin-bottom: 26px;
+    padding-top: 15px;
 }
 .dotted-box:first-child {
 	border: 0;
@@ -550,15 +555,15 @@ textarea.field_error::-webkit-input-placeholder { color: #e91d02; }
 }
 .pure-content h2 {
 	font-size: 22px;
-	font-family: 'arialnarrow';
+	font-family: 'PTSansNarrowRegular';
 	line-height: 25px;
 	margin-bottom: 15px;
 	color: #000;
 }
 
 .pure-content h3 {
-	font-size: 18px;
-	font-family: 'arialnarrow';
+	font-size: 17px;
+	font-family: 'PTSansNarrowRegular';
 	line-height: 22px;
 	margin-bottom: 15px;
 	color: #000;
@@ -566,7 +571,7 @@ textarea.field_error::-webkit-input-placeholder { color: #e91d02; }
 
 .pure-content h4 {
 	font-size: 16px;
-	font-family: 'arialnarrow';
+	font-family: 'PTSansNarrowRegular';
 	line-height: 18px;
 	margin-bottom: 15px;
 	color: #000;
