@@ -200,6 +200,7 @@ h4 {
 .block_yellow-bordered {
     border:3px solid #ffd400;
     border-radius: 10px;
+    behavior: url(PIE.htc);
 }
 
 .block__title {
@@ -341,7 +342,11 @@ textarea.field_error::-webkit-input-placeholder { color: #e91d02; }
 	margin-bottom: 8px;
 	line-height: 15px;
 }
-
+.form-note_small {
+    font-size: 13px;
+    color: #262627;
+    margin-bottom: 15px;
+}
 .form-text {
 	border-top:1px dotted #000;
 	padding-top: 15px;

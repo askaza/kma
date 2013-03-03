@@ -16,13 +16,11 @@
 
 	<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
 	<script type="text/javascript" src="js/jquery-ui-1.10.0.custom.min.js"></script>
+	<script type="text/javascript" src="js/jquery.jqtransform.js"></script>
 	<script type="text/javascript" src="js/slides.min.jquery.js"></script>
 	<script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
         <script type="text/javascript" src="js/common.js"></script>
 
-	<!--[if lt IE 10]>
-		<script type="text/javascript" src="js/PIE.js"></script>
-	<![endif]-->
 
     </head>
     <body>
@@ -164,12 +162,20 @@
 			</div> <!-- /.block_auth -->
 
 			<h2 class="subtitle">Остались вопросы?</h2>
+			<div class="form-note_small">
+			    Уважаемый(ая) Администратор.<br />
+			    Если Вы не нашли ответа ваш вопрос, напишите нам, мы рассмотрим и опубликуем ответ в ближайшее время.
+			</div>
 			<form action="#" method="get" class="form round-form question-form">
 			    <fieldset>
 				<input class="field field_title" type="text" name="question-title" id="question-title" placeholder="Заголовок..." />
 				<textarea class="field field_message" cols="10" rows="5" name="question-text" id="question-text" placeholder="Сообщение..."></textarea>
 				<input class="field field_name" type="text" name="question-name" id="question-name" placeholder="Имя...(можете остаться гостем)" />
 				<input class="field field_email" type="text" name="question-email" id="question-email" placeholder="E-mail...(если хотите получить ответ на почту)" />
+				<input class="field field_capcha" type="text" name="question-capcha" id="question-capcha" placeholder="Код на картинке..." />
+				<div class="field field_capcha_img">
+				    <img src="images/capcha.png" alt="" title="" />
+				</div>
 				<input type="submit" class="btn btn_blue" value="Отправить" />
 			    </fieldset>
 			</form>

@@ -192,6 +192,7 @@ body {
     position: relative;
     text-align: left;
     white-space: nowrap;
+    vertical-align: top;
 }
 
 .mainmenu .menu__item a,
@@ -776,23 +777,47 @@ a.bottom-contacts__item .ico {
 }
 
 .comments-form .field_name {
-	background: url(../images/bg/comments-form-shadow.png) repeat-x 0 0 #fff;
-	width: 758px;
+	width: 616px;
 	margin-left: 1px;
+	border-right:1px solid #D3D3D3;
 }
 .comments-form .field_message {
-	border-top: 1px dotted #cdced0;
+	border-top:1px solid #D3D3D3;
 	height: 16px;
-	padding-right:140px;
-	width: 636px;
-	height: 75px;
+	width: 617px;
+	height: 87px;
+	border-right: 1px solid #D3D3D3;
 }
 .comments-form .btn_silver {
-	position: absolute;
-	bottom: -1px;
-	right: -1px;
-	border-radius:0 0 5px 0;
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+    border-radius:0 0 5px 0;
+    width: 145px;
 }
+.comments-form .field_capcha {
+border-bottom: 1px solid #D3D3D3;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 115px;
+}
+.comments-form .field_capcha_img {
+    border-bottom: 1px solid #D3D3D3;
+    height: 57px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 32px;
+    width: 115px;
+}
+.comments-form .field_capcha_img img {
+    height: auto;
+    max-height: 57px;
+    max-width: 115px;
+    width: auto;
+}
+
 /* commeents >  */
 
 /* pagination < */
@@ -914,7 +939,10 @@ a.bottom-contacts__item .ico {
     padding: 0;
 }
 
-
+.slides_container {
+    behavior: url(PIE.htc);
+    border-radius: 10px;
+}
 .slide {
     position: absolute;
     top:0;
@@ -1043,6 +1071,7 @@ a.bottom-contacts__item .ico {
     background: #f2f3f3;
     border-radius: 5px;
     text-align: center;
+    behavior: url(PIE.htc);
 }
 .clients-list__item a img {
     max-height: 42px;
@@ -1105,6 +1134,7 @@ a.bottom-contacts__item .ico {
     overflow: hidden;
     padding:24px 30px;
     margin-bottom: 32px;
+    behavior: url(PIE.htc);
 }
 .banner__img {
     position: absolute;
@@ -1143,6 +1173,7 @@ a.bottom-contacts__item .ico {
 	-khtml-background-size: 100% 26px; /* Konqueror ≥ 3.5.4 */
     -moz-background-size: 100% 26px; /* Firefox ≥ 3.6 */
     background-size: 100% 26px; /* браузеры с поддержкой CSS3: FF ≥ 4, Opera ≥ 10.53, IE ≥ 9.0 */
+    behavior: url(PIE.htc);
 }
 .banner__title_corner_l {
     position: absolute;
@@ -1290,6 +1321,7 @@ a.bottom-contacts__item .ico {
     position: relative;
     z-index: 5;
     min-height: 215px;
+    behavior: url(PIE.htc);
 }
 
 .categories-tabs {
@@ -1517,30 +1549,53 @@ a.bottom-contacts__item .ico {
     margin-bottom: 57px;
 }
 
+.question-form .field_capcha {
+    position: absolute;
+    top:0;
+    right: 0;
+    border-bottom: 1px solid #d3d3d3;
+    width: 115px;
+}
 
 .question-form .field_title {
-    width: 793px;
+    width: 648px;
     border-bottom: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
     height: 18px;
 }
-.question-form .field_message {
-    width: 668px;
+.question-form .field_capcha_img {
+    position: absolute;
+    top:32px;
+    height: 57px;
+    right: 0;
     border-bottom: 1px solid #d3d3d3;
+    width: 115px;
+    text-align: center;
+}
+.question-form .field_capcha_img img {
+    max-height: 57px;
+    max-width: 115px;
+    height: auto;
+    width: auto;
+}
+.question-form .field_message {
+    width: 648px;
+    border-bottom: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
     height: 56px;
-    padding-right: 140px;
 }
 .question-form .field_name {
-    width: 365px;
+    width: 235px;
     border-right: 1px solid #d3d3d3;
     height: 18px;
 }
 .question-form .field_email {
-    width: 300px;
+    width: 378px;
     height: 18px;
 }
 
 .question-form .btn_blue {
-    width: 97px;
+    width: 145px;
     position: absolute;
     text-align: center;
     border-radius:0 0 5px 0;
