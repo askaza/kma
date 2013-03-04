@@ -17,10 +17,11 @@ $(document).ready(function() {
 		$(this).parents('.comment-single').next().slideToggle(500);
 		$(this).toggleClass('ico_expanded');
 	});
-	
+
 	$('.jqtransform').jqTransform();
-	
-	
-	
+
+  
+
+
 });
 

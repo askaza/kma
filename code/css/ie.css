@@ -8,8 +8,13 @@ input {
 .fields-list,
 .fields-list__item,
 .section_banners,
-.block_profile, 
-.auth-tabs__tabs {
+.block_profile,
+.auth-tabs__tabs,
+.category-title,
+.slide,
+.slides_container,
+.form,
+.round-form {
 	zoom:1;
 }
 
