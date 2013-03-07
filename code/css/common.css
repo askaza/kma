@@ -335,6 +335,15 @@ div.form-error h3 {
     margin-bottom: 3px;
     font-family: 'PTSansNarrowRegular';
 }
+.errors-list ul,
+.errors-list ul li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.errors-list ul li {
+	margin-bottom: 3px;
+}
 
 .form-text {
 	border-top:1px dotted #000;
