@@ -822,8 +822,9 @@ border-bottom: 1px solid #D3D3D3;
     position: absolute;
     right: 0;
     text-align: center;
-    top: 32px;
-    width: 115px;
+    top: 33px;
+    width: 113px;
+	background: #fff2be;
 }
 .comments-form .field_capcha_img img {
     height: auto;
