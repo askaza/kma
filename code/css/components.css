@@ -1448,6 +1448,8 @@ border-bottom: 1px solid #D3D3D3;
 }
 .articles-list .article__text {
     overflow: hidden;
+    height: auto;
+    margin-bottom: 20px;
 }
 .articles-list .article {
     overflow: hidden;
@@ -1606,6 +1608,7 @@ border-bottom: 1px solid #D3D3D3;
     border-bottom: 1px solid #d3d3d3;
     width: 115px;
     text-align: center;
+    background: #FFF2BE;
 }
 .question-form .field_capcha_img img {
     max-height: 57px;
@@ -1870,7 +1873,7 @@ border-bottom: 1px solid #D3D3D3;
 
 .add-comment_question {
 	padding-bottom: 35px;
-	border-bottom: 1px dotted #000;
+	border-bottom: none;
 	margin-bottom: 25px;
 }
 
