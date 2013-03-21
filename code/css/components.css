@@ -243,6 +243,19 @@ body {
 .menu__item_active .menu__item-note {
     color: #a3010e;
 }
+.mainmenu  .menu__item_active_simple {
+    margin: 0 -10px;
+}
+.mainmenu .menu__item_active_simple a,
+.mainmenu .menu__item_active_simple span {
+    padding-left: 27px;
+    padding-right: 27px;
+    color: #a3010e;
+}
+.menu__item_active_simple .menu__item-note {
+    color: #a3010e;
+}
+
 
 .submenu {
     width: 1250px;
@@ -785,9 +798,18 @@ a.bottom-contacts__item .ico {
 	margin-bottom: 20px;
 }
 
-.comments-form {
-	background: url("../images/bg/user.png") no-repeat scroll 0 2px transparent;
+.comments-form {	
     padding-left: 32px;
+    position: relative;
+}
+.comment-userpic {
+    position: absolute;
+    top:2px;
+    max-width: 26px;
+    height: auto;
+    width: auto;
+    max-height: 50px;
+    left:0;
 }
 
 .comments-form .field_name {
@@ -1042,8 +1064,8 @@ border-bottom: 1px solid #D3D3D3;
     width: 48%;
 }
 
-.prev,
-.next {
+#slides .prev,
+#slides .next {
     position: absolute;
     text-decoration: none;
     background: url(../images/bg/icons.png) no-repeat 0 0;
@@ -1054,12 +1076,12 @@ border-bottom: 1px solid #D3D3D3;
     text-indent: -9999px;
     z-index:100;
 }
-.prev {
+#slides .prev {
     background-position: -133px -33px;
     left:36px;
 }
 
-.next {
+#slides .next {
     background-position: -107px -33px;
     right:36px;
 }
