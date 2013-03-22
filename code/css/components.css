@@ -1602,11 +1602,11 @@ border-bottom: 1px solid #D3D3D3;
 }
 .question-form .field_capcha_img {
     position: absolute;
-    top:32px;
-    height: 57px;
+    top:33px;
+    height: 56px;
     right: 0;
     border-bottom: 1px solid #d3d3d3;
-    width: 115px;
+    width: 114px;
     text-align: center;
     background: #FFF2BE;
 }
