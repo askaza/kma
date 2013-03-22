@@ -2109,6 +2109,7 @@ border-bottom: 1px solid #D3D3D3;
 
 .comment-head {
 	position: relative;
+        padding-right: 50px;
 }
 
 .comment-head .ico_collapsed,
