@@ -325,20 +325,36 @@ body {
     background: url(../images/bg/footer-dotted.png) repeat-x 0 0;
     padding-top: 13px;
 }
-.section_sitemap > .menu {
+.section_sitemap > .menu,
+.section_sitemap > .menu_table {
     letter-spacing: -3px;
-    margin-left: -40px;
+    margin-left: -22px;
+    
+}
+.menu_table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 1250px;
+}
+
+.section_sitemap .menu_table tr > .menu__item {    
+    letter-spacing: normal;
+    margin-bottom: 5px;
+    padding-left: 20px;  
+    vertical-align: top;
+    padding-bottom: 15px;
 }
 .section_sitemap > .menu > .menu__item {
     display: inline-block;
     letter-spacing: normal;
     margin-bottom: 5px;
-    margin-left: 38px;
+    margin-left: 20px;
     max-width: 155px;
     vertical-align: top;
 }
-.section_sitemap > .menu > .menu__item > a,
-.section_sitemap > .menu > .menu__item > .dm_current {
+
+.section_sitemap  .menu__item > a,
+.section_sitemap .menu .menu__item > .dm_current {
     color: #e97400;
     font-size: 17px;
     font-family: 'PTSansNarrowBold';
@@ -349,6 +365,12 @@ body {
     display: block;
     line-height: 23px;
 }
+
+.section_sitemap  .menu_sub .menu__item a  {
+    margin: 0;
+    line-height: 17px;
+}
+
 .section_sitemap .menu__item-note {
     color: #000;
     font-size: 15px;
