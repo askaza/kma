@@ -343,13 +343,13 @@ body {
     padding-left: 20px;  
     vertical-align: top;
     padding-bottom: 15px;
+    max-width: 200px;
 }
 .section_sitemap > .menu > .menu__item {
     display: inline-block;
     letter-spacing: normal;
     margin-bottom: 5px;
-    margin-left: 20px;
-    max-width: 155px;
+    margin-left: 20px;    
     vertical-align: top;
 }
 
@@ -360,10 +360,10 @@ body {
     font-family: 'PTSansNarrowBold';
     text-transform: uppercase;
     text-decoration: none;
-    white-space: nowrap;
     margin-bottom: 3px;
     display: block;
     line-height: 23px;
+    white-space: normal;
 }
 
 .section_sitemap  .menu_sub .menu__item a  {
@@ -374,6 +374,7 @@ body {
 .section_sitemap .menu__item-note {
     color: #000;
     font-size: 15px;
+    margin-top:-3px;
 }
 .menu_sub .menu__item {
     color:#717171;
@@ -384,7 +385,7 @@ body {
     text-decoration: none;
 }
 .menu_sub .menu__item a,
-.menu_sub .menu__item .dm_current {
+.menu .menu_sub .menu__item > .dm_current {
     background: url("../images/bg/bottom-menu-bullet.png") no-repeat scroll 0 9px transparent;
     color: #717171;
     font-family: 'PTSansNarrowRegular';
