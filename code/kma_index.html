@@ -17,7 +17,7 @@
 	<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
 	<script type="text/javascript" src="js/jquery-ui-1.10.0.custom.min.js"></script>
 	<script type="text/javascript" src="js/jquery.jqtransform.js"></script>
-	<script type="text/javascript" src="js/slides.min.jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
 	<script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
         <script type="text/javascript" src="js/common.js"></script>
 
@@ -78,8 +78,10 @@
 
 		    <div class="block block_yellow-bordered promo-slider"> <!-- .promo-slider -->
 			<div id="slides">
-			    <div class="slides_container">
-				<div class="slide">
+                            <a class="prev" id="foo2_prev" href="#"></a>
+                            <a class="next" id="foo2_next" href="#"></a>
+			    <ul class="slides_container">
+				<li class="slide">
 				    <div class="slide__in">
 					<div class="slide__image">
 					    <img src="images/slides/1.png" alt="" title="" />
@@ -109,8 +111,8 @@
 					    </div>
 					</div>
 				    </div>
-				</div>
-				<div class="slide">
+				</li>
+				<li class="slide">
 				    <div class="slide__in">
 					<div class="slide__text">
 					    <h1 class="slide__title">Предложение месяца</h1>
@@ -137,8 +139,8 @@
 					    </div>
 					</div>
 				    </div>
-				</div>
-			    </div>
+				</li>
+			    </ul>
 			</div>
 		    </div> <!-- /.promo-slider -->
 

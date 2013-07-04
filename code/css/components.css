@@ -1000,15 +1000,25 @@ border-bottom: 1px solid #D3D3D3;
     padding: 0;
     height: 322px;
 }
+#slides {
+    position: relative;
+    overflow: hidden;
+    height: 322px;
+}
 
 .slides_container {
     behavior: url(PIE.htc);
-    border-radius: 10px;
+    border-radius: 10px;    
+    position: absolute;
+    float: left; 
+    width: 240px; height: 125px; overflow: hidden; position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 .slide {
-    position: absolute;
-    top:0;
-    left:0;
+    float:left;
+    position: relative;
     background: url(../images/bg/slider-bg.png) no-repeat 0 100%;
     height: 322px;
     width: 816px;

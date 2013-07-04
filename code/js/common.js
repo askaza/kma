@@ -1,9 +1,25 @@
-$(document).ready(function() {
-	$('#slides').slides({
-		preload: true,
-		generateNextPrev: true,
-		generatePagination:false
-	});
+$(document).ready(function() {    
+ 
+
+          $('#slides .slides_container').carouFredSel({
+            auto: true,
+            width: 816,
+            height: 322,
+            items: 1,
+                scroll: {
+                    items: 1
+                }, 
+            prev    : {
+	        button  : "#foo2_prev",
+	        key     : "left"
+	    },
+	    next    : {
+	        button  : "#foo2_next",
+	        key     : "right"
+	    },
+          });
+      
+    
 	$( "#tabs" ).tabs();
 
 	if ($.browser.msie && $.browser.version < 9) {
